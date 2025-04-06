@@ -1,0 +1,23 @@
+https://www.leagueoflegends.com/fr-fr/
+
+
+
+Frontend :
+Next.js, React, Angular
+styled-components, Redux
+lit-html, core-js, Goober
+Ethers, Ruffle
+Facebook Pixel, Google Ads  
+GA4, Hotjar, Yandex.Metrika
+Osano, reCAPTCHA
+Netlify, Cloudflare (CDN)   
+TypeScript, Webpack
+
+
+Backend:
+Magento, PHP
+MySQL
+AWS
+Datadog 
+Cloudflare 
+Webpack 

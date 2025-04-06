@@ -1,0 +1,614 @@
+
+.d-flex {
+    display: flex;
+
+
+}
+.flex{
+    display: flex;
+}
+.justify-content-center{
+    justify-content: center;
+}
+.justify-content-end{
+    justify-content: end;
+}
+.justify-content-between{
+    justify-content: space-between;
+}
+.justify-content-around{
+    justify-content: space-around;}
+
+.flex-colum {
+    flex-direction: column;
+}
+
+.align-item-center {
+    align-items: center;
+
+}
+.align-item-end{
+align-items: flex-end;
+
+}
+
+
+
+
+/* Page d'acceuil  */
+
+#back{
+    background: linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3)), url(image/fond1.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+    width: 100%;
+    height: 500px;
+    margin-top: 2%;
+    box-shadow: 1px 5px 5px rgb(119, 117, 117);
+}
+.titre {
+    color: rgb(169, 46, 218);
+    font-weight: 750;
+}
+.bouton{
+    text-decoration: none;
+    display: block;
+    background-color: rgb(90, 28, 85);
+    border-radius: 10px;
+    
+    color: #ffffff;
+    text-align: center;
+    font-size: 25px;
+    padding: 20px;
+    width: 200px;
+    transition: 0.5s;
+}
+
+.bouton:hover{
+    text-decoration: none;
+    background-color: rgb(196, 114, 196);
+    border: 2px solid purple;
+    color: white;
+    text-align: center;
+    font-size: 22px;
+}
+
+.w-60{
+    width: 50%;
+}
+
+
+.border{
+    border: 2px solid black;
+    border-radius: 50%;
+    
+}
+.borderb :hover{
+    transform: scale(1.1);
+    z-index: -1;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.863);
+    transition: transform .2s ,border-radius .2s;
+}
+
+.w-50{
+    width: 80%;
+}
+.margtop{
+    margin-top: 10%;
+}
+.w-img{
+    width: 70%;
+    
+}
+.padd{
+    padding: 5%;
+    
+}
+.margleft{
+    margin-left: 5%;
+}
+.margleft2{
+    padding-top: 20%;
+    
+}
+.margr{
+    margin-right: 20%
+}
+.margright{
+    margin-right: 10%;
+}
+.size{
+    font-size: 30px;
+    font-weight: 100;
+}
+h2{
+    font-size: 40px;
+}
+
+
+/* partie pour les couleurs nom regions */
+.bandle{
+    background: linear-gradient(to left,rgba(0, 153, 64, 0.678),rgb(4, 71, 2));
+    background-clip: text;
+    color: transparent;
+}
+.bilg{
+    background: linear-gradient(to left,rgb(255, 145, 0),rgb(219, 3, 3));
+    background-clip: text;
+    color: transparent;
+}
+.dema{
+    background: linear-gradient(to left,rgb(205, 228, 77),rgb(251, 255, 0));
+    background-clip: text;
+    color: transparent;
+}
+.frel{
+    background: linear-gradient(to left,aqua,rgb(5, 37, 128));
+    background-clip: text;
+    color: transparent;
+}
+.ionia{
+    background: linear-gradient(to left,rgb(226, 166, 218),rgb(247, 0, 255));
+    background-clip: text;
+    color: transparent;
+}
+.noxus{
+    background: linear-gradient(to left,rgb(202, 90, 90),rgb(255, 0, 0));
+    background-clip: text;
+    color: transparent;
+}
+.pil{
+    background: linear-gradient(to left,rgb(205, 228, 77),rgb(251, 255, 0));
+    background-clip: text;
+    color: transparent;
+}
+.ile{
+    background: linear-gradient(to left,rgb(26, 194, 194),rgb(0, 255, 106));
+    background-clip: text;
+    color: transparent;
+}
+.shu{
+    background: linear-gradient(to left,rgb(205, 228, 77),rgb(251, 255, 0));
+    background-clip: text;
+    color: transparent;
+}
+.targon{
+    background: linear-gradient(to left,rgb(4, 61, 94),rgb(247, 0, 255));
+    background-clip: text;
+    color: transparent;
+}
+
+/* inscitpion et connexion */
+.back{
+    margin-top: 5%;
+    background-color: rgb(182, 134, 184);
+   border: black 2px solid ;
+   height: 500px;
+   width: 50%;    
+}
+#pseudo {
+    width: 80%;
+    height: 50px;
+    margin-top:10% ;
+    border: 2px solid rgb(160, 46, 160);
+    border-radius: 50px;
+    text-align: center;
+    font-size: 20px;
+    
+}
+#prenom {
+    width: 25%;
+    height: 50px;
+    margin-top:10% ;
+    border: 2px solid rgb(160, 46, 160); 
+    border-radius: 50px; 
+    text-align: center;
+    font-size: 20px;  
+}
+.email{
+    margin-top: 10%;
+    width: 80%;
+    height: 50px;
+    border: 2px solid rgb(160, 46, 160);
+    border-radius: 50px;
+    text-align: center;
+    font-size: 20px;
+}
+.password{
+    width: 80%;
+    height: 50px;
+    margin-top: 5%;
+    border: 2px solid rgb(160, 46, 160);
+    border-radius: 50px;
+    text-align: center;
+    font-size: 20px;
+}
+
+.envoie{
+    background-color: green;
+    border: none;
+    border-radius: 50px;
+    width: 20%;
+}
+.envoie2{
+    background-color: green;
+    border: none;
+    border-radius: 50px;
+    width: 80%;
+}
+.margbot{
+    margin-bottom: 5%;
+}
+.margt{
+    margin-top: 5%;
+}
+.back2{
+    margin-top: 5%;
+    background-color: rgb(182, 134, 184);
+    border: black 2px solid ;  
+    width: 50%;  
+    margin-left: 25%;
+    height: 700px;
+}
+/* partie carte */
+#back2{
+    background: linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3)), url(image/background_carnet.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+    width: 100%;
+    height: 500px;
+    margin-top: 2%;
+    box-shadow: 1px 5px 5px rgb(119, 117, 117);
+}
+.cartecarte{
+    width: 100%;
+}
+/* footer */
+.contact{
+    width: 100%;
+}
+.gray{
+    background-color: rgb(212, 212, 211);
+}
+
+.mart{
+    font-size: 40px;
+    margin-left: 9%;
+}
+
+.arobase{
+    margin-top: 3%;
+    white-space: nowrap;
+}
+
+@media screen and (max-width:600px){
+    .mart{
+        font-size: 20px;
+        margin-left: 30%;
+    }
+    .contact{
+        width: 100%;
+
+    }
+    .gray{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .arobase{
+        white-space: unset;
+        font-size: 10px;
+        display: flex;
+    }
+    .cont{
+        margin-left: 22%;
+    }
+}
+/* pour le java */
+.black{
+    background-color:black
+}
+.white{
+    color :white
+}
+.borderwhite{
+    border: 2px solid white;
+    border-radius: 50%;
+}
+
+.margr2{
+    margin-right: 5%;
+}
+/* parti formulaire */
+    
+
+
+form > div {
+    margin: 30px 20px;  
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+input {
+    height: 20px;
+    width: 40%;
+}
+
+button {
+    margin-left: 20px;
+    margin-bottom: 30px;
+    padding: 10px 32px;
+    cursor: pointer;
+}
+    
+.message-error {
+border: 1px solid rgba(212, 42, 0, 1);
+color: rgb(212, 42, 0);
+background-color:rgba(212, 42, 0, 0.4);
+padding: 16px 32px;
+margin-bottom: 20px;
+display: none;
+}
+
+.message-success {
+border: 1px solid rgb(81, 150, 2);
+color: rgb(81, 150, 2);
+background-color:rgba(113, 212, 0, 0.4);
+padding: 16px 32px;
+margin-bottom: 20px;
+display: none;
+}
+.message-error.visible {
+    display: block;
+}
+.message-success.visible {
+    display: block;
+}
+
+.success {
+    border: 1px solid rgb(81, 150, 2);
+    background-color:rgba(113, 212, 0, 0.4);
+    
+    }
+.erreur {
+    border: 1px solid rgb(184, 77, 77);
+    background-color:rgb(184, 77, 77);
+}
+
+
+/* parti responsive */
+@media screen and (max-width:400px){
+
+    #text-video{
+        display: none;
+    }
+    #regions{
+        font-size: 20px;
+    }
+    .reglog{
+        display: flex;
+        flex-direction: column;
+        font-size: 15px;
+    }
+    .reglog img{
+        width: 50%;
+        margin-left: 23%;
+    }
+    .reglog h3{
+        padding-top: 0%;
+        margin-bottom: 15%;
+    }
+
+    .contact {
+        width: 100%;
+    }
+    
+
+    
+}
+@media screen and (max-width:650px){
+    #text-video{
+        display: none;
+    }
+    #emailC{
+        margin-bottom: 25%;
+        margin-top: 40%;
+    }
+    #valdiation{
+        margin-top: 50%;
+    }
+    #messC{
+        margin-top: 7%;
+    }
+}
+/* reposnisve partie cartes */
+@media screen and (max-width:1000px){
+    .txt-carte{
+        display: none;
+    }
+    .colum{
+        display: flex;
+        flex-wrap: wrap;
+        
+    }
+    .cartecarte{
+        width: 50%;
+    } 
+    .colum2{
+        display: flex;
+        flex-wrap: wrap-reverse;
+        align-items: center;
+    }
+    
+    
+}
+@media screen and (max-width:1150px) {
+    .crt{
+        width: 100%;
+    }
+    .envoie{
+        width: 100%;
+        height: 50px;
+    }
+    .back{
+        height: 400px;
+    }
+
+}
+
+/* partie sur les background */
+@media screen and (max-width:1150px) {
+    #back{
+        width: 100%;
+        height: 200px;
+        
+    }
+    .titre {
+        color: rgb(169, 46, 218);
+        font-weight: 750;
+    }
+    .ecrit{
+        font-size: 20px;
+    }
+    #back2{
+        width: 100%;
+        height: 200px;
+    }
+}
+/* partie navbarre  */
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+nav a {
+    text-decoration: none;
+    color: rgb(77, 77, 77);
+
+}
+
+nav ul {
+    list-style: none;
+    width: 100%;
+    font-size: 20px;
+
+}
+
+nav {
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    white-space: nowrap;
+
+}
+
+
+.esp_nav {
+    margin-left: 50%;
+    margin-right: 1%;
+}
+
+header {
+    box-shadow: 1px 5px 5px rgb(119, 117, 117);
+}
+
+#logo {
+    width: 15%;
+}
+
+.navmargtop {
+    margin-top: 5%;
+}
+
+.headmargtop {
+    margin-top: 1.5%;
+}
+
+.margleftli {
+    margin-left: 10%;
+}
+
+#btn1 {
+    margin-top: 8%;
+    border-radius: 1em;
+    background-color: rgb(169, 46, 218);
+    width: 250px;
+    height: 40px;
+    text-align: center;
+    color: white;
+
+
+}
+/* partie sidenav */
+.w-menu{
+    
+    display: none;
+}
+.vue{
+    display: block;
+}
+.disp{
+    display: none;
+}
+.slide{
+    display: none;
+}
+.marginleft{
+    margin-left: 30%;
+}
+/* partile navabrre slide */
+
+@media screen and (max-width:1000px) {
+    .esp_nav {
+        display: none;
+    }
+
+    .slide {
+        display: flex;
+        width: 300px;
+        position: fixed;
+        top: 0;
+        left: -100%; 
+        height: 300px;
+        background-color: #ffffff;
+        transition: left 0.5s ease-out;
+        box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2);
+    }
+
+    .slide ul {
+        margin-top: 5%;
+        width: 100%;
+    }
+    .slide li {
+        padding: 4%;
+        width: 95%;
+    }
+    .slide li a{
+        margin-left: 30%;
+        
+    }
+    .slide.open { 
+        left: -10%;
+    }
+
+    .w-menu {
+        width: 30%;
+        display: block;
+        cursor: pointer;
+    }
+
+    #logo {
+        width: 15%;
+    }
+    .hrr{
+        margin-top: 3%;
+    }
+}
+.content:not(.active) {
+    display: none !important;
+}

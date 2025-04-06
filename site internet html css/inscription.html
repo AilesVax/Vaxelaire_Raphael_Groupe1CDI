@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <header class="d-flex">
+        
+        <img src="css/image/Untitled.png" alt="" class="w-menu disp " id="menu">
+        <nav class="slide left">
+            <ul class="d-flex flex-colum">
+                
+                <li class=" margleftli">
+                    <a href="index.html">Acceuil</a> 
+                    <hr class="hrr">
+                </li>
+                
+                <li class=" margleftli">
+                    <a href="carte.html">Les Cartes</a><hr class="hrr">
+                </li>
+                
+                <li class=" margleftli">
+                    <a href="collection.html"> Collection</a><hr class="hrr">
+                </li>
+                <li class=" margleftli">
+                    <a href="inscription.html">Inscription</a><hr class="hrr">
+                </li>
+                <li class=" margleftli">
+                    <a href="connexion.html">Connexion</a>
+                </li>
+                
+            </ul>
+            
+        </nav>
+
+        
+        <img id="logo" src="css/image/logo_card.png" alt="logo LolCard ">
+        <H1 class="headmargtop">LolCard</H1>
+        <nav  class="d-flex esp_nav ">
+                <ul class="d-flex ">
+                    <li class=" margleftli">
+                        <a href="index.html">Acceuil</a>
+                    </li>
+                    <li class=" margleftli">
+                        <a href="carte.html">Les Cartes</a>
+                    </li>
+                    <li class=" margleftli">
+                        <a href="collection.html">Collection</a>
+                    </li>
+                </ul>
+                <a href="connexion.html"><button id="btn1">Inscription / Connexion →</button></a>
+                
+        </nav>
+    </header>
+    <main>
+        
+        <h2 class="d-flex justify-content-center margt">INSCRIPTION</h2>
+        <section class="d-flex flex-colum align-item-center back2 ">
+            <div class="message-error">
+                <ul id="test">
+                    
+                </ul>
+            </div>
+            <div class="message-success">
+                Formulaire envoyé !
+            </div>
+            <form  action="" method="POST" enctype="multipart/form-data">
+                <div>
+                    <label for="pseudo">Pseudo</label>
+                    <input  type="text" name="pseudo" id="pseudo" placeholder="Pseudo">
+                </div>
+            
+                <div>
+                    <label for="email">Email</label>
+                    <input class="email" type="email" name="email" id="email" placeholder="Email">
+                </div>
+                
+                <div>
+                    <label for="password">Mot de passe</label>
+                    <input  class="password" type="password" name="password" id="password" placeholder="Password">
+                </div>
+                
+                <div>
+                    <label for="password2">Verification mot de passe</label>
+                    <input class="password"  type="password" name="password2" id="password2" placeholder="Password">
+                </div>
+                
+                
+                <button class="envoie2 margt" type="submit">S'inscrire</button>
+                
+            
+            </form>
+            <p id="messC">Vous n'avez pas de compte ?</p>
+            <a class="margbot" href="connexion.html">Connexion</a>
+        </section>
+    </main>
+<script src="fichierJS/formulaire.js"></script>
+<script src="fichierJS/side.js"></script>
+</body>
+</html>
