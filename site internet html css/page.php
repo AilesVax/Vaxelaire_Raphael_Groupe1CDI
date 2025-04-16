@@ -118,8 +118,7 @@
     <main>
     <section>
         <!-- partie recherche de joueur connecter au js -->
-        <input type="text" id="index" placeholder="numero du joueur entre 1 et 300">
-        <button onclick="displayChallengerPlayers()">Chercher</button>
+        <input id="index" value="Aatrox" />
         <div id="lol"></div>
     </section>
     </main>

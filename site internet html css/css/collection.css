@@ -28,17 +28,19 @@
  }
 
 .margleftt{
-    margin-left: 15%;
+    margin-left: 8%;
 }
 
 .image-container {
     display: inline-block;
-    width: 20%;
+    width: 22%;  
 }
 
 .coeur_vide{
 width: 30%;
 transition: transform 0.1s ease-in-out;
+margin-top: 17%;
+margin-left: 45%;
 }
 .coeur_vide:hover{
     transform: scale(1.3);
@@ -46,13 +48,45 @@ transition: transform 0.1s ease-in-out;
 .coeur_plein{
     width: 30%;
     transition: transform 0.1s ease-in-out;
+    margin-top: 17%;
+    margin-left: 45%;
 }
 .coeur_plein:hover{
     transform: scale(1.3);
 }
 
 
+.cartecarte_collection{
+    width: 50%;
+    margin-left: 25%;
+    
+}
+.bordercarte{
+  background-color: #392055;
+  border: 2px solid #6140cf;
+  border-radius: 15px;
+  padding: 20px;
+  width: 300px;
+  text-align: center;
+  color: white;
+  margin-left: 5%;
+  transition: transform 0.1s ease-in-out;
+  animation: slide 1s ;
+  
+}
 
+.bordercarte:hover{
+    transform: scale(1.3);
+}
+
+@keyframes slide {
+    from{
+       margin-top: 40%;
+    }
+    to{
+        margin-top: 0%;
+    }
+}
 @media screen and (max-width:600px) {
     .image-container {
         display: flex;

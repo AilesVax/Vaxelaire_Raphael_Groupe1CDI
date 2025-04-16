@@ -45,27 +45,25 @@ $client = new Client();
 $region = "EUW1"; 
 $queue = "RANKED_SOLO_5x5"; 
 
-try {
-    //lien API plus clé
-    $response = $client->request('GET', "https://$region.api.riotgames.com/lol/league/v4/challengerleagues/by-queue/$queue", [
-        'headers' => [
-            'X-Riot-Token' => 'RGAPI-1091449e-15e6-4c83-bf77-7c3abaca6715'
-        ]
-    ]);
 
-    // mettre les données de l'API en json
+    //lien API plus clé
+    $response = $client->request('GET', "https://ddragon.leagueoflegends.com/cdn/14.7.1/data/fr_FR/champion.json");
+    
+    $imageUrl = "https://ddragon.leagueoflegends.com/cdn/img/champion/loading/Aatrox_0.jpg";
+    // Décoder la réponse JSON
     $leagueData = json_decode($response->getBody(), true);
-    
-} catch (Exception $e) {
-    
-    echo "Erreur : " . $e->getMessage();
-}
+
+    // Afficher les données pour vérification
+    echo "<pre>";
+    var_dump($leagueData);
+  
+    echo "</pre>";
 
 
 
 ?>
 
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -106,4 +104,4 @@ try {
 </tbody>
 </table>
 </body>
-</html>
+</html> -->

@@ -46,33 +46,13 @@ align-items: flex-end;
     height: 500px;
     margin-top: 2%;
     box-shadow: 1px 5px 5px rgb(119, 117, 117);
+    animation: slidein 1s ease-in-out;
 }
 .titre {
     color: rgb(169, 46, 218);
     font-weight: 750;
 }
-.bouton{
-    text-decoration: none;
-    display: block;
-    background-color: rgb(90, 28, 85);
-    border-radius: 10px;
-    
-    color: #ffffff;
-    text-align: center;
-    font-size: 25px;
-    padding: 20px;
-    width: 200px;
-    transition: 0.5s;
-}
 
-.bouton:hover{
-    text-decoration: none;
-    background-color: rgb(196, 114, 196);
-    border: 2px solid purple;
-    color: white;
-    text-align: center;
-    font-size: 22px;
-}
 
 .w-60{
     width: 50%;
@@ -261,9 +241,34 @@ h2{
     height: 500px;
     margin-top: 2%;
     box-shadow: 1px 5px 5px rgb(119, 117, 117);
+    animation: slidein 1s ease-in-out;
 }
+    @keyframes slidein {
+        from{
+            opacity: 0.1;
+        }
+        to{
+            opacity: 1;
+        }
+    }
 .cartecarte{
-    width: 100%;
+width: 100%;
+}
+
+.bordercartecarte{
+    background-color: #392055;
+    border: 2px solid #6140cf;
+    border-radius: 15px;
+    padding: 20px;
+    text-align: center;
+    color: white;
+    margin-left: 5%;
+    margin: 1%;
+    transition: transform 0.1s ease-in-out;
+    animation: slidein 1s ease-in-out;
+}
+.bordercartecarte:hover{
+    transform: scale(1.1);
 }
 /* footer */
 .contact{
@@ -544,6 +549,18 @@ header {
 
 
 }
+#btn1:hover{
+    margin-top: 8%;
+    border-radius: 1em;
+    background-color: rgb(97, 29, 124);
+    width: 250px;
+    height: 40px;
+    text-align: center;
+    color: white;
+    
+
+}
+
 /* partie sidenav */
 .w-menu{
     
