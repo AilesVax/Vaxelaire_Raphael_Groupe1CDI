@@ -42,7 +42,7 @@ function fetchName() {
       const image = `https://ddragon.leagueoflegends.com/cdn/img/champion/loading/${championlol}_0.jpg`;
       
       
-      container.innerHTML += `<div class="d-flex flex-colum bordercarte">
+      container.innerHTML += `<div class=" bordercarte">
           <p class="d-flex justify-content-center">${data.data[championlol].id}</p>
           <img src="${image}" alt="${championlol}" class="cartecarte_collection" class="cartecarte" />
           <p class="d-flex justify-content-center"> Attaque: ${data.data[championlol].info.attack} <br> Défense: ${data.data[championlol].info.defense} <br> Magique: ${data.data[championlol].info.magic}</p> 
@@ -74,7 +74,7 @@ function fetchName() {
     const image = `https://ddragon.leagueoflegends.com/cdn/img/champion/loading/${championlol}_0.jpg`;
     
     
-    container.innerHTML += `<div class="d-flex flex-colum bordercarte ">
+    container.innerHTML += `<div class=" bordercarte ">
         <p class="d-flex justify-content-center">${data.data[championlol].id}</p>
         <img src="${image}" alt="${championlol}"  class="cartecarte_collection" />
         <p class="d-flex justify-content-center"> Attaque: ${data.data[championlol].info.attack} <br> Défense: ${data.data[championlol].info.defense} <br> Magique: ${data.data[championlol].info.magic}</p> 
@@ -109,7 +109,7 @@ function fetchName() {
     const image = `https://ddragon.leagueoflegends.com/cdn/img/champion/loading/${championlol}_0.jpg`;
     
     
-    container.innerHTML += `<div class="d-flex flex-colum bordercarte">
+    container.innerHTML += `<div class=" bordercarte">
         <p class="d-flex justify-content-center">${data.data[championlol].id}</p>
         <img src="${image}" alt="${championlol}" class="cartecarte_collection" class="cartecarte" />
         <p class="d-flex justify-content-center"> Attaque: ${data.data[championlol].info.attack} <br> Défense: ${data.data[championlol].info.defense} <br> Magique: ${data.data[championlol].info.magic}</p> 
@@ -143,7 +143,7 @@ function fetchName() {
     const image = `https://ddragon.leagueoflegends.com/cdn/img/champion/loading/${championlol}_0.jpg`;
     
     
-    container.innerHTML += `<div class="d-flex flex-colum bordercarte">
+    container.innerHTML += `<div class=" bordercarte">
         <p class="d-flex justify-content-center">${data.data[championlol].id}</p>
         <img src="${image}" alt="${championlol}" class="cartecarte_collection" class="cartecarte" />
         <p class="d-flex justify-content-center"> Attaque: ${data.data[championlol].info.attack} <br> Défense: ${data.data[championlol].info.defense} <br> Magique: ${data.data[championlol].info.magic}</p> 
@@ -176,7 +176,7 @@ function fetchName() {
     const image = `https://ddragon.leagueoflegends.com/cdn/img/champion/loading/${championlol}_0.jpg`;
     
     
-    container.innerHTML += `<div class="d-flex flex-colum bordercarte">
+    container.innerHTML += `<div class=" bordercarte">
         <p class="d-flex justify-content-center">${data.data[championlol].id}</p>
         <img src="${image}" alt="${championlol}" class="cartecarte_collection" class="cartecarte" />
         <p class="d-flex justify-content-center"> Attaque: ${data.data[championlol].info.attack} <br> Défense: ${data.data[championlol].info.defense} <br> Magique: ${data.data[championlol].info.magic}</p> 
@@ -209,7 +209,7 @@ function fetchName() {
     const image = `https://ddragon.leagueoflegends.com/cdn/img/champion/loading/${championlol}_0.jpg`;
     
     
-    container.innerHTML += `<div class="d-flex flex-colum bordercarte">
+    container.innerHTML += `<div class=" bordercarte">
         <p class="d-flex justify-content-center">${data.data[championlol].id}</p>
         <img src="${image}" alt="${championlol}" class="cartecarte_collection" class="cartecarte" />
         <p class="d-flex justify-content-center"> Attaque: ${data.data[championlol].info.attack} <br> Défense: ${data.data[championlol].info.defense} <br> Magique: ${data.data[championlol].info.magic}</p> 
@@ -242,7 +242,7 @@ function fetchName() {
     const image = `https://ddragon.leagueoflegends.com/cdn/img/champion/loading/${championlol}_0.jpg`;
     
     
-    container.innerHTML += `<div class="d-flex flex-colum bordercarte">
+    container.innerHTML += `<div class=" bordercarte">
         <p class="d-flex justify-content-center">${data.data[championlol].id}</p>
         <img src="${image}" alt="${championlol}" class="cartecarte_collection" class="cartecarte" />
         <p class="d-flex justify-content-center"> Attaque: ${data.data[championlol].info.attack} <br> Défense: ${data.data[championlol].info.defense} <br> Magique: ${data.data[championlol].info.magic}</p> 
@@ -275,7 +275,7 @@ function fetchName() {
     const image = `https://ddragon.leagueoflegends.com/cdn/img/champion/loading/${championlol}_0.jpg`;
     
     
-    container.innerHTML += `<div class="d-flex flex-colum bordercarte">
+    container.innerHTML += `<div class=" bordercarte">
         <p class="d-flex justify-content-center">${data.data[championlol].id}</p>
         <img src="${image}" alt="${championlol}" class="cartecarte_collection" class="cartecarte" />
         <p class="d-flex justify-content-center"> Attaque: ${data.data[championlol].info.attack} <br> Défense: ${data.data[championlol].info.defense} <br> Magique: ${data.data[championlol].info.magic}</p> 
@@ -308,7 +308,7 @@ function fetchName() {
     const image = `https://ddragon.leagueoflegends.com/cdn/img/champion/loading/${championlol}_0.jpg`;
     
     
-    container.innerHTML += `<div class="d-flex flex-colum bordercarte">
+    container.innerHTML += `<div class=" bordercarte">
         <p class="d-flex justify-content-center">${data.data[championlol].id}</p>
         <img src="${image}" alt="${championlol}" class="cartecarte_collection" class="cartecarte" />
         <p class="d-flex justify-content-center"> Attaque: ${data.data[championlol].info.attack} <br> Défense: ${data.data[championlol].info.defense} <br> Magique: ${data.data[championlol].info.magic}</p> 

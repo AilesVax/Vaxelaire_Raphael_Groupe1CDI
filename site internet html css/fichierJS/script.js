@@ -23,7 +23,7 @@ function fetchName() {
   })
     .then((response) => response.json());
   }
-  
+  //focntion pour etre sur du nom recuperer et retouren premiere lettre en majuscule et le reste en minuscule
   function NomCorrect(name) {
     return name.charAt(0).toUpperCase() + name.slice(1).toLowerCase();
   }
@@ -34,18 +34,20 @@ function fetchName() {
     const container = document.getElementById("lol");
     const championn =document.querySelectorAll('.index');
    
-    
+    //reucperer tous les element avec index et afficher le nom
     championn.forEach(element => {
-      let nom = element.value;
+      let nom = element.value;  
       let championlol =NomCorrect(nom);
-  
+  //charger image
     const image = `https://ddragon.leagueoflegends.com/cdn/img/champion/loading/${championlol}_0.jpg`;
     
-    
-    container.innerHTML += `<div class="d-flex flex-colum bordercartecarte">
+    //ajouter en html
+    container.innerHTML += `<div class=" bordercartecarte"   >
     <p class="d-flex justify-content-center">${data.data[championlol].id}</p>
     <img src="${image}" alt="${championlol}" class="cartecarte" />
+    <a href="Page.html?champion=${championlol}" class="page white">Description</a>
   </div>
+  
     `;
   
   
@@ -55,6 +57,7 @@ function fetchName() {
     };
     
   }
+  //afficher sur le html direct
   window.addEventListener('DOMContentLoaded', () => {
     ChamionsName();
 });
@@ -73,9 +76,10 @@ async function ChamionsName1() {
   const image = `https://ddragon.leagueoflegends.com/cdn/img/champion/loading/${championlol}_0.jpg`;
   
   
-  container.innerHTML += `<div class="d-flex flex-colum bordercartecarte">
+  container.innerHTML += `<div class=" bordercartecarte">
       <p class="d-flex justify-content-center">${data.data[championlol].id}</p>
       <img src="${image}" alt="${championlol}" class="cartecarte" />
+      <a href="Page.html?champion=${championlol}" class="page white">Description</a>
     </div>
       `;
     
@@ -105,9 +109,10 @@ async function ChamionsName2() {
   const image = `https://ddragon.leagueoflegends.com/cdn/img/champion/loading/${championlol}_0.jpg`;
   
   
-    container.innerHTML += `<div class="d-flex flex-colum bordercartecarte">
+    container.innerHTML += `<div class=" bordercartecarte">
       <p class="d-flex justify-content-center">${data.data[championlol].id}</p>
       <img src="${image}" alt="${championlol}" class="cartecarte" />
+      <a href="Page.html?champion=${championlol}" class="page white">Description</a>
     </div>
       `;
     
@@ -138,9 +143,10 @@ async function ChamionsName3() {
   const image = `https://ddragon.leagueoflegends.com/cdn/img/champion/loading/${championlol}_0.jpg`;
   
   
-    container.innerHTML += `<div class="d-flex flex-colum bordercartecarte">
+    container.innerHTML += `<div class=" bordercartecarte">
       <p class="d-flex justify-content-center">${data.data[championlol].id}</p>
       <img src="${image}" alt="${championlol}" class="cartecarte" />
+      <a href="Page.html?champion=${championlol}" class="page white">Description</a>
     </div>
       `;
     
@@ -170,9 +176,10 @@ async function ChamionsName4() {
   const image = `https://ddragon.leagueoflegends.com/cdn/img/champion/loading/${championlol}_0.jpg`;
   
   
-    container.innerHTML += `<div class="d-flex flex-colum bordercartecarte">
+    container.innerHTML += `<div class=" bordercartecarte">
       <p class="d-flex justify-content-center">${data.data[championlol].id}</p>
       <img src="${image}" alt="${championlol}" class="cartecarte" />
+      <a href="Page.html?champion=${championlol}" class="page white">Description</a>
     </div>
       `;
     
@@ -202,9 +209,10 @@ async function ChamionsName5() {
   const image = `https://ddragon.leagueoflegends.com/cdn/img/champion/loading/${championlol}_0.jpg`;
   
   
-    container.innerHTML += `<div class="d-flex flex-colum bordercartecarte">
+    container.innerHTML += `<div class=" bordercartecarte">
       <p class="d-flex justify-content-center">${data.data[championlol].id}</p>
       <img src="${image}" alt="${championlol}" class="cartecarte" />
+      <a href="Page.html?champion=${championlol}" class="page white">Description</a>
     </div>
       `;
     
@@ -234,9 +242,10 @@ async function ChamionsName6() {
   const image = `https://ddragon.leagueoflegends.com/cdn/img/champion/loading/${championlol}_0.jpg`;
   
   
-    container.innerHTML += `<div class="d-flex flex-colum bordercartecarte">
+    container.innerHTML += `<div class=" bordercartecarte">
       <p class="d-flex justify-content-center">${data.data[championlol].id}</p>
       <img src="${image}" alt="${championlol}" class="cartecarte" />
+      <a href="Page.html?champion=${championlol}" class="page white">Description</a>
     </div>
       `;
     
@@ -266,9 +275,10 @@ async function ChamionsName7() {
   const image = `https://ddragon.leagueoflegends.com/cdn/img/champion/loading/${championlol}_0.jpg`;
   
   
-    container.innerHTML += `<div class="d-flex flex-colum bordercartecarte">
+    container.innerHTML += `<div class=" bordercartecarte">
       <p class="d-flex justify-content-center">${data.data[championlol].id}</p>
       <img src="${image}" alt="${championlol}" class="cartecarte" />
+      <a href="Page.html?champion=${championlol}" class="page white">Description</a>
     </div>
       `;
     
@@ -298,9 +308,10 @@ async function ChamionsName8() {
   const image = `https://ddragon.leagueoflegends.com/cdn/img/champion/loading/${championlol}_0.jpg`;
   
   
-    container.innerHTML += `<div class="d-flex flex-colum bordercartecarte">
+    container.innerHTML += `<div class=" bordercartecarte">
       <p class="d-flex justify-content-center">${data.data[championlol].id}</p>
       <img src="${image}" alt="${championlol}" class="cartecarte" />
+      <a href="Page.html?champion=${championlol}" class="page white">Description</a>
     </div>
       `;
     

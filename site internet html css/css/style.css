@@ -266,10 +266,15 @@ width: 100%;
     margin: 1%;
     transition: transform 0.1s ease-in-out;
     animation: slidein 1s ease-in-out;
+    display: flex;
+    flex-direction: column;
 }
 .bordercartecarte:hover{
     transform: scale(1.1);
 }
+
+
+
 /* footer */
 .contact{
     width: 100%;
@@ -436,21 +441,43 @@ display: none;
     .txt-carte{
         display: none;
     }
-    .colum{
+    .colum {
         display: flex;
-        flex-wrap: wrap;
-        
+        flex-direction: column;
+        align-items: center;
     }
-    .cartecarte{
-        width: 50%;
-    } 
     .colum2{
         display: flex;
-        flex-wrap: wrap-reverse;
+        flex-direction: column-reverse;
         align-items: center;
     }
     
-    
+    .cartecarte{
+        width: 100%;
+        
+    }
+        
+    .bordercartecarte {
+        flex-direction: column;
+        width: 90%;
+    }
+    #lol,
+    #lol1,
+    #lol2,
+    #lol3,
+    #lol4,
+    #lol5,
+    #lol6,
+    #lol7,
+    #lol8 {
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 50%;
+    }
+    .mid{
+        display: flex;
+        justify-content: center;
+    }
 }
 @media screen and (max-width:1150px) {
     .crt{
@@ -560,7 +587,45 @@ header {
     
 
 }
+/* partie bouton flottant echange */
+.fixe {
+    position: fixed;
+    bottom: 8%;
+    right: 2%;
+    
+}
 
+.jolie {
+    background-color: #2d1d3b;
+    padding: 15px;
+    border-radius: 1em;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    display: none;
+}
+
+.echange {
+    width: 200px;
+    height: 40px;
+    margin: 8px ;
+    padding: 5px 10px;
+    font-size: 14px;
+    border-radius: 8px;
+}
+#exchange{
+    border-radius: 1em;
+    background-color: rgb(97, 29, 124);
+    text-align: center;
+    color: white;
+    width: 150px;
+    height: 50px;
+    position: fixed;
+    bottom: 3%;
+    right: 2%;
+}
+#exchange:hover{  
+    background-color: rgb(168, 16, 228);
+}
 /* partie sidenav */
 .w-menu{
     
@@ -627,5 +692,14 @@ header {
     }
 }
 .content:not(.active) {
-    display: none !important;
+    display: none ;
+}
+/* partie bouton flottant responsive */
+@media screen and (max-width: 500px) {
+    .fixe {
+        position: fixed;
+        bottom: 15%;
+        right: 18%;
+        transform: translateX(50%);
+    }
 }

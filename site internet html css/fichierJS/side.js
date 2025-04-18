@@ -20,3 +20,12 @@ document.addEventListener("click", function (event) {
         }
     }
 });
+
+
+
+let button = document.getElementById("exchange");
+let form = document.querySelector(".jolie");
+button.addEventListener("click", function(){
+    event.preventDefault();
+    form.classList.toggle("vue");
+})

@@ -1,0 +1,62 @@
+.bordercartecarte2{
+    background-color: #392055;
+    border: 2px solid #6140cf;
+    border-radius: 15px;
+    padding: 20px;
+    width: 300px;
+    text-align: center;
+    color: white;
+    margin-left: 25%;
+    transition: transform 0.1s ease-in-out;
+    animation: slide 1s ;
+    display: flex;
+    flex-direction: column;
+
+}   
+
+
+
+.bordercartecarte2 p {
+   
+    font-size: 25px;
+}
+
+.card-description {
+    margin-top: 10px;
+    max-width: 600px;
+    text-align: justify;
+    font-size: 14px;
+    color: #111;
+    background-color: #f0f0f0;
+    padding: 12px;
+    border-radius: 10px;
+    font-size: 25px;
+    
+}
+.responsiveee{
+    display: flex;
+    justify-content: center;
+    
+   } 
+@media screen and (max-width:600px){
+   .responsiveee{
+    display: flex;
+    flex-direction: column;
+   } 
+   .bordercartecarte2{
+    background-color: #392055;
+    border: 2px solid #6140cf;
+    border-radius: 15px;
+    padding: 20px;
+    width: 200px;
+    text-align: center;
+    color: white;
+    margin-left: 5%;
+    transition: transform 0.1s ease-in-out;
+    animation: slide 1s ;
+    display: flex;
+    flex-direction: column;
+    margin-top: 5%;
+    margin-left: 25%;
+  }
+}

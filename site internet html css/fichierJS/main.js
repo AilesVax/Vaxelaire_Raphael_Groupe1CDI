@@ -32,7 +32,7 @@ li.forEach(lis => {
         // en rajoute ces classes sur la li cliquer
         this.classList.add('tab-active');  
         this.classList.add('borderrb'); 
-        
+        //verfication sur lequel on clique
         if (this.classList.contains('tab-nomDuContenu1')) {
             contenu1.classList.add('active');
         } else if (this.classList.contains('tab-nomDuContenu2')) {
@@ -58,6 +58,7 @@ li.forEach(lis => {
     
 })
 
+//changement de coeur image coeur rempli ou coeur vide
 coeurVide.forEach(coeurVide => {
     coeurVide.addEventListener("click", function() {
       const coeurplein = this.parentElement.querySelector('.coeur_plein');
@@ -73,7 +74,7 @@ coeurVide.forEach(coeurVide => {
     });
   });
 
-
+//pour ouvrir un menu en responsive sur collection
   let fleche = document.querySelector("#fleche")
   let choix = document.querySelectorAll(".dis")
   
