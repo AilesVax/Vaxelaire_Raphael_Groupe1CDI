@@ -1,3 +1,5 @@
+
+/* que par rapport a la page collection.html */
 .content{
     display: none;
 }
@@ -80,7 +82,7 @@ margin-left: 45%;
 .bordercarte:hover{
     transform: scale(1.3);
 }
-
+/* animation keyframe */
 @keyframes slide {
     from{
        margin-top: 40%;
@@ -89,6 +91,8 @@ margin-left: 45%;
         margin-top: 0%;
     }
 }
+
+/* responsive page collection.html */
 @media screen and (max-width:600px) {
 
     .tab{

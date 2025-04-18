@@ -1,5 +1,6 @@
+//focntion pour récuprer le parametre par rapport au lien auquel j'ai ajouter un parametre
 function getChampionFromURL() {
-    const params = new URL(window.location.href);
+    const params = new URL(window.location.href); 
     return params.searchParams.get("champion");
 }
 

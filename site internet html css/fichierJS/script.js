@@ -22,73 +22,74 @@ function fetchName() {
     method: 'GET'
   })
     .then((response) => response.json());
-  }
-  //focntion pour etre sur du nom recuperer et retouren premiere lettre en majuscule et le reste en minuscule
-  function NomCorrect(name) {
-    return name.charAt(0).toUpperCase() + name.slice(1).toLowerCase();
-  }
+}
+//focntion pour etre sur du nom recuperer et retouren premiere lettre en majuscule et le reste en minuscule
+function NomCorrect(name) {
+  return name.charAt(0).toUpperCase() + name.slice(1).toLowerCase();
+}
 // premiere partie de cartes  
- async function ChamionsName() {
-    try{
-    const data = await fetchName(); 
+async function ChamionsName() {
+  try {
+    const data = await fetchName();
     const container = document.getElementById("lol");
-    const championn =document.querySelectorAll('.index');
-   
+    const championn = document.querySelectorAll('.index');
+
     //reucperer tous les element avec index et afficher le nom
     championn.forEach(element => {
-      let nom = element.value;  
-      let championlol =NomCorrect(nom);
-  //charger image
-    const image = `https://ddragon.leagueoflegends.com/cdn/img/champion/loading/${championlol}_0.jpg`;
-    
-    //ajouter en html
-    container.innerHTML += `<div class=" bordercartecarte"   >
+      let nom = element.value;
+      let championlol = NomCorrect(nom);
+      //charger image
+      const image = `https://ddragon.leagueoflegends.com/cdn/img/champion/loading/${championlol}_0.jpg`;
+
+      //ajouter en html
+      container.innerHTML += `<div class=" bordercartecarte"   >
     <p class="d-flex justify-content-center">${data.data[championlol].id}</p>
     <img src="${image}" alt="${championlol}" class="cartecarte" />
     <a href="Page.html?champion=${championlol}" class="page white">Description</a>
   </div>
   
     `;
-  
-  
-});  
-    }catch(error) {
-      console.error("Erreur lors du fetch des challengers :", error);
-    };
-    
-  }
-  //afficher sur le html direct
-  window.addEventListener('DOMContentLoaded', () => {
-    ChamionsName();
+
+
+    });
+  } catch (error) {
+    console.error("Erreur lors du fetch des challengers :", error);
+  };
+
+}
+//afficher sur le html direct
+window.addEventListener('DOMContentLoaded', () => {
+  ChamionsName();
 });
 //deuxieme partie
 async function ChamionsName1() {
-  try{
-  const data = await fetchName(); 
-  const container = document.getElementById("lol1");
-  const championn =document.querySelectorAll('.index1');
- 
-  
-  championn.forEach(element => {
-    let nom = element.value;
-    let championlol =NomCorrect(nom);
+  try {
+    const data = await fetchName();
+    const container = document.getElementById("lol1");
+    const championn = document.querySelectorAll('.index1');
 
-  const image = `https://ddragon.leagueoflegends.com/cdn/img/champion/loading/${championlol}_0.jpg`;
-  
-  
-  container.innerHTML += `<div class=" bordercartecarte">
-      <p class="d-flex justify-content-center">${data.data[championlol].id}</p>
-      <img src="${image}" alt="${championlol}" class="cartecarte" />
-      <a href="Page.html?champion=${championlol}" class="page white">Description</a>
-    </div>
+
+    championn.forEach(element => {
+      let nom = element.value;
+      let championlol = NomCorrect(nom);
+
+      const image = `https://ddragon.leagueoflegends.com/cdn/img/champion/loading/${championlol}_0.jpg`;
+
+
+      container.innerHTML += `
+      <div class=" bordercartecarte">
+        <p class="d-flex justify-content-center">${data.data[championlol].id}</p>
+        <img src="${image}" alt="${championlol}" class="cartecarte" />
+        <a href="Page.html?champion=${championlol}" class="page white">Description</a>
+      </div>
       `;
-    
-    
-  });  
-  }catch(error) {
+
+
+    });
+  } catch (error) {
     console.error("Erreur lors du fetch des challengers :", error);
   };
-  
+
 }
 window.addEventListener('DOMContentLoaded', () => {
   ChamionsName1();
@@ -96,32 +97,33 @@ window.addEventListener('DOMContentLoaded', () => {
 
 //troiseme partie
 async function ChamionsName2() {
-  try{
-  const data = await fetchName(); 
-  const container = document.getElementById("lol2");
-  const championn =document.querySelectorAll('.index2');
- 
-  
-  championn.forEach(element => {
-    let nom = element.value;
-    let championlol =NomCorrect(nom);
+  try {
+    const data = await fetchName();
+    const container = document.getElementById("lol2");
+    const championn = document.querySelectorAll('.index2');
 
-  const image = `https://ddragon.leagueoflegends.com/cdn/img/champion/loading/${championlol}_0.jpg`;
-  
-  
-    container.innerHTML += `<div class=" bordercartecarte">
-      <p class="d-flex justify-content-center">${data.data[championlol].id}</p>
-      <img src="${image}" alt="${championlol}" class="cartecarte" />
-      <a href="Page.html?champion=${championlol}" class="page white">Description</a>
-    </div>
+
+    championn.forEach(element => {
+      let nom = element.value;
+      let championlol = NomCorrect(nom);
+
+      const image = `https://ddragon.leagueoflegends.com/cdn/img/champion/loading/${championlol}_0.jpg`;
+
+
+      container.innerHTML += `
+      <div class=" bordercartecarte">
+        <p class="d-flex justify-content-center">${data.data[championlol].id}</p>
+        <img src="${image}" alt="${championlol}" class="cartecarte" />
+        <a href="Page.html?champion=${championlol}" class="page white">Description</a>
+      </div>
       `;
-    
-    
-  });
-  }catch(error) {
+
+
+    });
+  } catch (error) {
     console.error("Erreur lors du fetch des challengers :", error);
   };
-  
+
 }
 window.addEventListener('DOMContentLoaded', () => {
   ChamionsName2();
@@ -130,32 +132,32 @@ window.addEventListener('DOMContentLoaded', () => {
 
 //quatreime partie
 async function ChamionsName3() {
-  try{
-  const data = await fetchName(); 
-  const container = document.getElementById("lol3");
-  const championn =document.querySelectorAll('.index3');
- 
-  
-  championn.forEach(element => {
-    let nom = element.value;
-    let championlol =NomCorrect(nom);
+  try {
+    const data = await fetchName();
+    const container = document.getElementById("lol3");
+    const championn = document.querySelectorAll('.index3');
 
-  const image = `https://ddragon.leagueoflegends.com/cdn/img/champion/loading/${championlol}_0.jpg`;
-  
-  
-    container.innerHTML += `<div class=" bordercartecarte">
-      <p class="d-flex justify-content-center">${data.data[championlol].id}</p>
-      <img src="${image}" alt="${championlol}" class="cartecarte" />
-      <a href="Page.html?champion=${championlol}" class="page white">Description</a>
-    </div>
+
+    championn.forEach(element => {
+      let nom = element.value;
+      let championlol = NomCorrect(nom);
+
+      const image = `https://ddragon.leagueoflegends.com/cdn/img/champion/loading/${championlol}_0.jpg`;
+
+      container.innerHTML += `
+      <div class=" bordercartecarte">
+        <p class="d-flex justify-content-center">${data.data[championlol].id}</p>
+        <img src="${image}" alt="${championlol}" class="cartecarte" />
+        <a href="Page.html?champion=${championlol}" class="page white">Description</a>
+      </div>
       `;
-    
-    
-  });
-  }catch(error) {
+
+
+    });
+  } catch (error) {
     console.error("Erreur lors du fetch des challengers :", error);
   };
-  
+
 }
 window.addEventListener('DOMContentLoaded', () => {
   ChamionsName3();
@@ -163,32 +165,33 @@ window.addEventListener('DOMContentLoaded', () => {
 
 //cinquieme partie
 async function ChamionsName4() {
-  try{
-  const data = await fetchName(); 
-  const container = document.getElementById("lol4");
-  const championn =document.querySelectorAll('.index4');
- 
-  
-  championn.forEach(element => {
-    let nom = element.value;
-    let championlol =NomCorrect(nom);
+  try {
+    const data = await fetchName();
+    const container = document.getElementById("lol4");
+    const championn = document.querySelectorAll('.index4');
 
-  const image = `https://ddragon.leagueoflegends.com/cdn/img/champion/loading/${championlol}_0.jpg`;
-  
-  
-    container.innerHTML += `<div class=" bordercartecarte">
-      <p class="d-flex justify-content-center">${data.data[championlol].id}</p>
-      <img src="${image}" alt="${championlol}" class="cartecarte" />
-      <a href="Page.html?champion=${championlol}" class="page white">Description</a>
-    </div>
+
+    championn.forEach(element => {
+      let nom = element.value;
+      let championlol = NomCorrect(nom);
+
+      const image = `https://ddragon.leagueoflegends.com/cdn/img/champion/loading/${championlol}_0.jpg`;
+
+
+      container.innerHTML += `
+      <div class=" bordercartecarte">
+        <p class="d-flex justify-content-center">${data.data[championlol].id}</p>
+        <img src="${image}" alt="${championlol}" class="cartecarte" />
+        <a href="Page.html?champion=${championlol}" class="page white">Description</a>
+      </div>
       `;
-    
-    
-  });
-  }catch(error) {
+
+
+    });
+  } catch (error) {
     console.error("Erreur lors du fetch des challengers :", error);
   };
-  
+
 }
 window.addEventListener('DOMContentLoaded', () => {
   ChamionsName4();
@@ -196,32 +199,32 @@ window.addEventListener('DOMContentLoaded', () => {
 
 //sixieme partie 
 async function ChamionsName5() {
-  try{
-  const data = await fetchName(); 
-  const container = document.getElementById("lol5");
-  const championn =document.querySelectorAll('.index5');
- 
-  
-  championn.forEach(element => {
-    let nom = element.value;
-    let championlol =NomCorrect(nom);
+  try {
+    const data = await fetchName();
+    const container = document.getElementById("lol5");
+    const championn = document.querySelectorAll('.index5');
 
-  const image = `https://ddragon.leagueoflegends.com/cdn/img/champion/loading/${championlol}_0.jpg`;
-  
-  
-    container.innerHTML += `<div class=" bordercartecarte">
-      <p class="d-flex justify-content-center">${data.data[championlol].id}</p>
-      <img src="${image}" alt="${championlol}" class="cartecarte" />
-      <a href="Page.html?champion=${championlol}" class="page white">Description</a>
-    </div>
+
+    championn.forEach(element => {
+      let nom = element.value;
+      let championlol = NomCorrect(nom);
+
+      const image = `https://ddragon.leagueoflegends.com/cdn/img/champion/loading/${championlol}_0.jpg`;
+
+      container.innerHTML += `
+      <div class=" bordercartecarte">
+        <p class="d-flex justify-content-center">${data.data[championlol].id}</p>
+        <img src="${image}" alt="${championlol}" class="cartecarte" />
+        <a href="Page.html?champion=${championlol}" class="page white">Description</a>
+      </div>
       `;
-    
-    
-  });
-  }catch(error) {
+
+
+    });
+  } catch (error) {
     console.error("Erreur lors du fetch des challengers :", error);
   };
-  
+
 }
 window.addEventListener('DOMContentLoaded', () => {
   ChamionsName5();
@@ -229,32 +232,33 @@ window.addEventListener('DOMContentLoaded', () => {
 
 //septieme partie
 async function ChamionsName6() {
-  try{
-  const data = await fetchName(); 
-  const container = document.getElementById("lol6");
-  const championn =document.querySelectorAll('.index6');
- 
-  
-  championn.forEach(element => {
-    let nom = element.value;
-    let championlol =NomCorrect(nom);
+  try {
+    const data = await fetchName();
+    const container = document.getElementById("lol6");
+    const championn = document.querySelectorAll('.index6');
 
-  const image = `https://ddragon.leagueoflegends.com/cdn/img/champion/loading/${championlol}_0.jpg`;
-  
-  
-    container.innerHTML += `<div class=" bordercartecarte">
-      <p class="d-flex justify-content-center">${data.data[championlol].id}</p>
-      <img src="${image}" alt="${championlol}" class="cartecarte" />
-      <a href="Page.html?champion=${championlol}" class="page white">Description</a>
-    </div>
+
+    championn.forEach(element => {
+      let nom = element.value;
+      let championlol = NomCorrect(nom);
+
+      const image = `https://ddragon.leagueoflegends.com/cdn/img/champion/loading/${championlol}_0.jpg`;
+
+
+      container.innerHTML += `
+      <div class=" bordercartecarte">
+        <p class="d-flex justify-content-center">${data.data[championlol].id}</p>
+        <img src="${image}" alt="${championlol}" class="cartecarte" />
+        <a href="Page.html?champion=${championlol}" class="page white">Description</a>
+      </div>
       `;
-    
-    
-  });
-  }catch(error) {
+
+
+    });
+  } catch (error) {
     console.error("Erreur lors du fetch des challengers :", error);
   };
-  
+
 }
 window.addEventListener('DOMContentLoaded', () => {
   ChamionsName6();
@@ -262,32 +266,33 @@ window.addEventListener('DOMContentLoaded', () => {
 
 //huitieme partie
 async function ChamionsName7() {
-  try{
-  const data = await fetchName(); 
-  const container = document.getElementById("lol7");
-  const championn =document.querySelectorAll('.index7');
- 
-  
-  championn.forEach(element => {
-    let nom = element.value;
-    let championlol =NomCorrect(nom);
+  try {
+    const data = await fetchName();
+    const container = document.getElementById("lol7");
+    const championn = document.querySelectorAll('.index7');
 
-  const image = `https://ddragon.leagueoflegends.com/cdn/img/champion/loading/${championlol}_0.jpg`;
-  
-  
-    container.innerHTML += `<div class=" bordercartecarte">
-      <p class="d-flex justify-content-center">${data.data[championlol].id}</p>
-      <img src="${image}" alt="${championlol}" class="cartecarte" />
-      <a href="Page.html?champion=${championlol}" class="page white">Description</a>
-    </div>
+
+    championn.forEach(element => {
+      let nom = element.value;
+      let championlol = NomCorrect(nom);
+
+      const image = `https://ddragon.leagueoflegends.com/cdn/img/champion/loading/${championlol}_0.jpg`;
+
+
+      container.innerHTML += `
+      <div class=" bordercartecarte">
+        <p class="d-flex justify-content-center">${data.data[championlol].id}</p>
+        <img src="${image}" alt="${championlol}" class="cartecarte" />
+        <a href="Page.html?champion=${championlol}" class="page white">Description</a>
+      </div>
       `;
-    
-    
-  });
-  }catch(error) {
+
+
+    });
+  } catch (error) {
     console.error("Erreur lors du fetch des challengers :", error);
   };
-  
+
 }
 window.addEventListener('DOMContentLoaded', () => {
   ChamionsName7();
@@ -295,32 +300,33 @@ window.addEventListener('DOMContentLoaded', () => {
 
 //neuvieme partie
 async function ChamionsName8() {
-  try{
-  const data = await fetchName(); 
-  const container = document.getElementById("lol8");
-  const championn =document.querySelectorAll('.index8');
- 
-  
-  championn.forEach(element => {
-    let nom = element.value;
-    let championlol =NomCorrect(nom);
+  try {
+    const data = await fetchName();
+    const container = document.getElementById("lol8");
+    const championn = document.querySelectorAll('.index8');
 
-  const image = `https://ddragon.leagueoflegends.com/cdn/img/champion/loading/${championlol}_0.jpg`;
-  
-  
-    container.innerHTML += `<div class=" bordercartecarte">
-      <p class="d-flex justify-content-center">${data.data[championlol].id}</p>
-      <img src="${image}" alt="${championlol}" class="cartecarte" />
-      <a href="Page.html?champion=${championlol}" class="page white">Description</a>
-    </div>
+
+    championn.forEach(element => {
+      let nom = element.value;
+      let championlol = NomCorrect(nom);
+
+      const image = `https://ddragon.leagueoflegends.com/cdn/img/champion/loading/${championlol}_0.jpg`;
+
+
+      container.innerHTML += `
+      <div class=" bordercartecarte">
+        <p class="d-flex justify-content-center">${data.data[championlol].id}</p>
+        <img src="${image}" alt="${championlol}" class="cartecarte" />
+        <a href="Page.html?champion=${championlol}" class="page white">Description</a>
+      </div>
       `;
-    
-    
-  });
-  }catch(error) {
+
+
+    });
+  } catch (error) {
     console.error("Erreur lors du fetch des challengers :", error);
   };
-  
+
 }
 window.addEventListener('DOMContentLoaded', () => {
   ChamionsName8();

@@ -1,3 +1,6 @@
+/* Que par arapport a la page dynamoique qui affiche la description  */
+
+
 .bordercartecarte2{
     background-color: #392055;
     border: 2px solid #6140cf;
@@ -38,6 +41,8 @@
     justify-content: center;
     
    } 
+
+   /*  Partie repsonsive*/
 @media screen and (max-width:600px){
    .responsiveee{
     display: flex;
