@@ -1,12 +1,15 @@
-//focntion pour récuprer le parametre par rapport au lien auquel j'ai ajouter un parametre
-function getChampionFromURL() {
+
+function NomCorrect(name) {
+    return name.charAt(0).toUpperCase() + name.slice(1).toLowerCase();
+
+
+//focntion pour récuprer le parametre par rapport au lien auquel j'ai ajouter un parametre    
+}function getChampionFromURL() {
     const params = new URL(window.location.href); 
     return params.searchParams.get("champion");
 }
 
-function NomCorrect(name) {
-    return name.charAt(0).toUpperCase() + name.slice(1).toLowerCase();
-}
+
 
 function fetchName() {
     return fetch("https://ddragon.leagueoflegends.com/cdn/14.7.1/data/fr_FR/champion.json")

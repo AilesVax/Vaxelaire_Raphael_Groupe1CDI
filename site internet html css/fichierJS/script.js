@@ -15,7 +15,10 @@
 // https://EUW1.api.riotgames.com/lol/league/v4/challengerleagues/by-queue/RANKED_SOLO_5x5
 
 
-
+//focntion pour etre sur du nom recuperer et retouren premiere lettre en majuscule et le reste en minuscule
+function NomCorrect(name) {
+  return name.charAt(0).toUpperCase() + name.slice(1).toLowerCase();
+}
 // connection a l'API
 function fetchName() {
   return fetch("https://ddragon.leagueoflegends.com/cdn/14.7.1/data/fr_FR/champion.json", {
@@ -23,10 +26,7 @@ function fetchName() {
   })
     .then((response) => response.json());
 }
-//focntion pour etre sur du nom recuperer et retouren premiere lettre en majuscule et le reste en minuscule
-function NomCorrect(name) {
-  return name.charAt(0).toUpperCase() + name.slice(1).toLowerCase();
-}
+
 // premiere partie de cartes  
 async function ChamionsName() {
   try {
