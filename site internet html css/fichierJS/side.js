@@ -24,8 +24,8 @@ document.addEventListener("click", function (event) {
 
 
 let button = document.getElementById("exchange");
-let form = document.querySelector(".jolie");
-button.addEventListener("click", function(){
+let formm = document.querySelector(".jolie");
+button.addEventListener("click", function(event){
     event.preventDefault();
-    form.classList.toggle("vue");
+    formm.classList.toggle("vue");
 })

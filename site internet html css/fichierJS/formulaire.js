@@ -1,5 +1,6 @@
 let form = document.querySelector('form')
 
+
 form.addEventListener('submit', function (event) {
     event.preventDefault();
     console.log('Envoi du form detecté !')
@@ -28,7 +29,8 @@ form.addEventListener('submit', function (event) {
         pseudo.classList.remove('erreur')
         pseudo.classList.add('success')
     }
-    // Juste verification email
+    // Juste verification email + localstorage
+    
     if (email.value == '') {
         email.classList.add('erreur')
         email.classList.remove('success')
@@ -88,4 +90,7 @@ form.addEventListener('submit', function (event) {
 
     
 })
+
+
+
 
