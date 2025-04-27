@@ -87,7 +87,7 @@ form.addEventListener('submit', function (event) {
     succes.classList.add('visible')
     }
 
-
+    form.submit();
     
 })
 

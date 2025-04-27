@@ -45,7 +45,7 @@ async function ChamionsName() {
       container.innerHTML += `<div class=" bordercartecarte"   >
     <p class="d-flex justify-content-center">${data.data[championlol].id}</p>
     <img src="${image}" alt="${championlol}" class="cartecarte" />
-    <a href="Page.html?champion=${championlol}" class="page white">Description</a>
+    <a href="Page.php?champion=${championlol}" class="page white">Description</a>
   </div>
   
     `;
@@ -80,7 +80,7 @@ async function ChamionsName1() {
       <div class=" bordercartecarte">
         <p class="d-flex justify-content-center">${data.data[championlol].id}</p>
         <img src="${image}" alt="${championlol}" class="cartecarte" />
-        <a href="Page.html?champion=${championlol}" class="page white">Description</a>
+        <a href="Page.php?champion=${championlol}" class="page white">Description</a>
       </div>
       `;
 
@@ -114,7 +114,7 @@ async function ChamionsName2() {
       <div class=" bordercartecarte">
         <p class="d-flex justify-content-center">${data.data[championlol].id}</p>
         <img src="${image}" alt="${championlol}" class="cartecarte" />
-        <a href="Page.html?champion=${championlol}" class="page white">Description</a>
+        <a href="Page.php?champion=${championlol}" class="page white">Description</a>
       </div>
       `;
 
@@ -148,7 +148,7 @@ async function ChamionsName3() {
       <div class=" bordercartecarte">
         <p class="d-flex justify-content-center">${data.data[championlol].id}</p>
         <img src="${image}" alt="${championlol}" class="cartecarte" />
-        <a href="Page.html?champion=${championlol}" class="page white">Description</a>
+        <a href="Page.php?champion=${championlol}" class="page white">Description</a>
       </div>
       `;
 
@@ -182,7 +182,7 @@ async function ChamionsName4() {
       <div class=" bordercartecarte">
         <p class="d-flex justify-content-center">${data.data[championlol].id}</p>
         <img src="${image}" alt="${championlol}" class="cartecarte" />
-        <a href="Page.html?champion=${championlol}" class="page white">Description</a>
+        <a href="Page.php?champion=${championlol}" class="page white">Description</a>
       </div>
       `;
 
@@ -215,7 +215,7 @@ async function ChamionsName5() {
       <div class=" bordercartecarte">
         <p class="d-flex justify-content-center">${data.data[championlol].id}</p>
         <img src="${image}" alt="${championlol}" class="cartecarte" />
-        <a href="Page.html?champion=${championlol}" class="page white">Description</a>
+        <a href="Page.php?champion=${championlol}" class="page white">Description</a>
       </div>
       `;
 
@@ -249,7 +249,7 @@ async function ChamionsName6() {
       <div class=" bordercartecarte">
         <p class="d-flex justify-content-center">${data.data[championlol].id}</p>
         <img src="${image}" alt="${championlol}" class="cartecarte" />
-        <a href="Page.html?champion=${championlol}" class="page white">Description</a>
+        <a href="Page.php?champion=${championlol}" class="page white">Description</a>
       </div>
       `;
 
@@ -283,7 +283,7 @@ async function ChamionsName7() {
       <div class=" bordercartecarte">
         <p class="d-flex justify-content-center">${data.data[championlol].id}</p>
         <img src="${image}" alt="${championlol}" class="cartecarte" />
-        <a href="Page.html?champion=${championlol}" class="page white">Description</a>
+        <a href="Page.php?champion=${championlol}" class="page white">Description</a>
       </div>
       `;
 
@@ -317,7 +317,7 @@ async function ChamionsName8() {
       <div class=" bordercartecarte">
         <p class="d-flex justify-content-center">${data.data[championlol].id}</p>
         <img src="${image}" alt="${championlol}" class="cartecarte" />
-        <a href="Page.html?champion=${championlol}" class="page white">Description</a>
+        <a href="Page.php?champion=${championlol}" class="page white">Description</a>
       </div>
       `;
 

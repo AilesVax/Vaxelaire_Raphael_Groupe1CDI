@@ -1,67 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="import" href="carte.html">
-    <title>Document</title>
-</head>
-
-<body>
-    <header class="d-flex">
-<!-- navbarre -->
-        <img src="css/image/Untitled.png" alt="" class="w-menu disp " id="menu">
-        <nav class="slide left">
-            <ul class="d-flex flex-colum">
-
-                <li class=" margleftli">
-                    <a href="index.html">Acceuil</a>
-                    <hr class="hrr">
-                </li>
-
-                <li class=" margleftli">
-                    <a href="carte.html">Les Cartes</a>
-                    <hr class="hrr">
-                </li>
-
-                <li class=" margleftli">
-                    <a href="collection.html"> Collection</a>
-                    <hr class="hrr">
-                </li>
-                <li class=" margleftli">
-                    <a href="inscription.html">Inscription</a>
-                    <hr class="hrr">
-                </li>
-                <li class=" margleftli">
-                    <a href="connexion.html">Connexion</a>
-                </li>
-
-            </ul>
-
-        </nav>
-
-
-<!--partie sidenav repsonsive -->
-        <img id="logo" src="css/image/logo_card.png" alt="logo LolCard ">
-        <H1 class="headmargtop">LolCard</H1>
-        <nav class="d-flex esp_nav ">
-            <ul class="d-flex ">
-                <li class=" margleftli">
-                    <a href="index.html">Acceuil</a>
-                </li>
-                <li class=" margleftli">
-                    <a href="carte.html">Les Cartes</a>
-                </li>
-                <li class=" margleftli">
-                    <a href="collection.html">Collection</a>
-                </li>
-            </ul>
-            <a href="connexion.html"><button id="btn1">Inscription / Connexion →</button></a>
-
-        </nav>
-    </header>
+<?php 
+require_once("haut_site.php");
+?>
     <main>
         <!-- <button id="sbr"class=" bouton ">sombre</button> -->
         <section id="back" class="d-flex flex-colum  ">
@@ -89,51 +28,51 @@
             <h2 id="regions">Les différentes régions</h2>
             <div class="d-flex reglog padd ">
                 <div class=" d-flex flex-colum align-item-center">
-                    <a class=" borderb  " href="carte.html#bandle"><img class=" border margleft w-50 bb "
+                    <a class=" borderb  " href="carte.php#bandle"><img class=" border margleft w-50 bb "
                             src="logo_image/Bandle_City_LoR_Region.png" alt="logo Bandle City"></a>
                     <h3 class="margleft2 margright size bandle"> Bandle City </h3>
                 </div>
                 <div class=" d-flex flex-colum align-item-center">
-                    <a class=" borderb " href="carte.html#bilgwater"><img class="border margleft w-50 bb"
+                    <a class=" borderb " href="carte.php#bilgwater"><img class="border margleft w-50 bb"
                             src="logo_image/Bilgewater_LoR_Region.png" alt="logo Bilgwater"></a>
                     <h3 class="margleft2 margright size bilg"> Bilgewater </h3>
                 </div>
                 <div class=" d-flex flex-colum align-item-center">
-                    <a class=" borderb " href="carte.html#demacia"><img class="border margleft w-50 bb"
+                    <a class=" borderb " href="carte.php#demacia"><img class="border margleft w-50 bb"
                             src="logo_image/Demacia_LoR_Region.png" alt="logo  Demacia"></a>
                     <h3 class="margleft2 margright size dema"> Demacia </h3>
                 </div>
             </div>
             <div class="d-flex reglog padd">
                 <div class=" d-flex flex-colum align-item-center">
-                    <a class=" borderb " href="carte.html#freljord"><img class="border margleft w-50 bb"
+                    <a class=" borderb " href="carte.php#freljord"><img class="border margleft w-50 bb"
                             src="logo_image/Freljord_LoR_Region.png" alt="logo freljord "></a>
                     <h3 class="margleft2 margright size frel"> Freljord </h3>
                 </div>
                 <div class=" d-flex flex-colum align-item-center">
-                    <a class=" borderb " href="carte.html#ionia"><img class="border margleft w-50 bb"
+                    <a class=" borderb " href="carte.php#ionia"><img class="border margleft w-50 bb"
                             src="logo_image/Ionia_LoR_Region.png" alt="logo ionia"></a>
                     <h3 class="margleft2 margright size ionia "> Ionia </h3>
                 </div>
                 <div class=" d-flex flex-colum align-item-center">
-                    <a class=" borderb " href="carte.html#noxus"><img class="border margleft w-50 bb"
+                    <a class=" borderb " href="carte.php#noxus"><img class="border margleft w-50 bb"
                             src="logo_image/Noxus_Crest_icon(1).png" alt="logo noxus"></a>
                     <h3 class="margleft2 margright size noxus"> Noxus </h3>
                 </div>
             </div>
             <div class="d-flex  reglog padd">
                 <div class=" d-flex flex-colum align-item-center">
-                    <a class=" borderb " href="carte.html#piltover"><img class="border margleft w-50 bb"
+                    <a class=" borderb " href="carte.php#piltover"><img class="border margleft w-50 bb"
                             src="logo_image/Piltover_Zaun_LoR_Region.png" alt="logo piltover et zaun"></a>
                     <h3 class="margleft2 margright size pil"> Piltover & Zaun </h3>
                 </div>
                 <div class=" d-flex flex-colum align-item-center">
-                    <a class=" borderb " href="carte.html#ile"><img class="border margleft w-50 bb"
+                    <a class=" borderb " href="carte.php#ile"><img class="border margleft w-50 bb"
                             src="logo_image/Shadow_Isles_LoR_Region.png" alt="logo  iles obscures"></a>
                     <h3 class="margleft2 margright size ile"> Îles obscures </h3>
                 </div>
                 <div class=" d-flex flex-colum align-item-center">
-                    <a class=" borderb " href="carte.html#shurima"><img class="border margleft w-50 bb"
+                    <a class=" borderb " href="carte.php#shurima"><img class="border margleft w-50 bb"
                             src="logo_image/Shurima_LoR_Region.png" alt="logo Shurima "></a>
                     <h3 class="margleft2 margright size shu"> Shurima </h3>
                 </div>
@@ -153,24 +92,9 @@
             <button id="exchange">Échange</button>
         </form>
     </main>
-<!-- footer -->
-    <footer class="d-flex  gray ">
-        <div class="margleft">
-            <h2 class="mart ">Nous Contactez </h2>
-            <div class="d-flex w-60 padd justify-content-center cont">
-                <img class="margleft contact" src="css/image/174857.png" alt=" logo linkedin">
-                <img class="margleft contact" src="css/image/pngtree-email-icon-png-image_1757854.jpg"
-                    alt=" logo email">
-                <img class="margleft contact" src="css/image/Facebook_logo_(square).png" alt=" logo facebook">
-                <img class="margleft contact" src="css/image/Instagram_icon.png.webp" alt=" log instagram">
-            </div>
-        </div>
-        
-            <p class="arobase">© 2025 | Entreprise LolCard <br> <br> <br> <br>Service client disponible / conditions générales d'utilisation / Mentions légales /
-                politique de confidentialité</p>
-            
-
-    </footer>
+    <?php 
+require_once("bas_site.php");
+?>
     
 
     

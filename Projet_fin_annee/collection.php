@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="stylesheet" href="css/style.css">
-    <link rel="import" href="carte.html">
+    <link rel="import" href="carte.php">
     <link rel="stylesheet" href="css/collection.css">
     <title>Document</title>
 </head>
@@ -24,25 +24,25 @@
             <ul class="d-flex flex-colum">
 
                 <li class=" margleftli">
-                    <a href="index.html">Acceuil</a>
+                    <a href="index.php">Acceuil</a>
                     <hr class="hrr">
                 </li>
 
                 <li class=" margleftli">
-                    <a href="carte.html">Les Cartes</a>
+                    <a href="carte.php">Les Cartes</a>
                     <hr class="hrr">
                 </li>
 
                 <li class=" margleftli">
-                    <a href="collection.html"> Collection</a>
+                    <a href="collection.php"> Collection</a>
                     <hr class="hrr">
                 </li>
                 <li class=" margleftli">
-                    <a href="inscription.html">Inscription</a>
+                    <a href="inscription.php">Inscription</a>
                     <hr class="hrr">
                 </li>
                 <li class=" margleftli">
-                    <a href="connexion.html">Connexion</a>
+                    <a href="connexion.php">Connexion</a>
                 </li>
 
             </ul>
@@ -55,16 +55,16 @@
         <nav class="d-flex esp_nav ">
             <ul class="d-flex ">
                 <li class=" margleftli">
-                    <a href="index.html">Acceuil</a>
+                    <a href="index.php">Acceuil</a>
                 </li>
                 <li class=" margleftli">
-                    <a href="carte.html">Les Cartes</a>
+                    <a href="carte.php">Les Cartes</a>
                 </li>
                 <li class=" margleftli">
-                    <a href="collection.html">Collection</a>
+                    <a href="collection.php">Collection</a>
                 </li>
             </ul>
-            <a href="connexion.html"><button id="btn1">Inscription / Connexion →</button></a>
+            <a href="connexion.php"><button id="btn1">Inscription / Connexion →</button></a>
 
         </nav>
     </header>
@@ -415,25 +415,9 @@
             </div>
         </section>
     </main>
-    <!-- footer -->
-    <footer class="d-flex  gray margtop ">
-        <div class="margleft">
-            <h2 class="mart ">Nous Contactez </h2>
-            <div class="d-flex w-60 padd justify-content-center cont">
-                <img class="margleft contact" src="css/image/174857.png" alt=" logo linkedin">
-                <img class="margleft contact" src="css/image/pngtree-email-icon-png-image_1757854.jpg"
-                    alt=" logo email">
-                <img class="margleft contact" src="css/image/Facebook_logo_(square).png" alt=" logo facebook">
-                <img class="margleft contact" src="css/image/Instagram_icon.png.webp" alt=" log instagram">
-            </div>
-        </div>
-
-        <p class="arobase">© 2025 | Entreprise LolCard <br> <br> <br> <br>Service client disponible / conditions
-            générales d'utilisation / Mentions légales /
-            politique de confidentialité</p>
-
-
-    </footer>
+    <?php 
+require_once("bas_site.php");
+?>
     <script src="fichierJS/script.js"></script>
     <script src="fichierJS/main.js"></script>
     <script src="fichierJS/side.js"></script>
