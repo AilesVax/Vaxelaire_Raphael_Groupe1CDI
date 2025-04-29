@@ -143,7 +143,7 @@
                         <input class="index5" value="Ahri" />
                         <input class="index5" value="Yasuo" />
                         <input class="index5" value="Yone" />
-                        <input class="index5" value="Sejuani" />
+                        <input class="index5" value="Irelia" />
                     </div>
                     <div id="lol6" class="d-flex mage ">
                         <input class="index6" value="Riven" />

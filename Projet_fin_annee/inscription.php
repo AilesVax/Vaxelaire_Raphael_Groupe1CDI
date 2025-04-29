@@ -9,7 +9,9 @@ if($_POST){
     $pseudo = $_POST["pseudo"];
     $email = $_POST["email"];
     $password = $_POST["password"];
+    $password2 = $_POST["password2"];
     
+    if($password == $password2){
     $sql = "INSERT INTO user (pseudo,email, password) VALUES(:pseudo,:email,:password)";
 
     $stmt = $pdo->prepare($sql);
@@ -20,6 +22,10 @@ if($_POST){
     ]);
 
     echo "Votre user a été cocrrectement inséré en BDD";
+    }else{
+        echo "pas meme mot de passe";
+    }
+
 
 }
 
