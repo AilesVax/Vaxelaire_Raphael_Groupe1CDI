@@ -1,4 +1,7 @@
+<?php
 
+require_once("init.php");
+?>
 
 
 
@@ -16,7 +19,7 @@
 
 <body>
     <header class="d-flex">
-<!-- navbarre -->
+<!--partie sidenav repsonsive -->
         <img src="css/image/Untitled.png" alt="" class="w-menu disp " id="menu">
         <nav class="slide left">
             <ul class="d-flex flex-colum">
@@ -49,7 +52,7 @@
 
 
 
-<!--partie sidenav repsonsive -->
+<!--Navbarre -->
         <img id="logo" src="css/image/logo_card.png" alt="logo LolCard ">
         <H1 class="headmargtop">LolCard</H1>
         <nav class="d-flex esp_nav ">
@@ -64,7 +67,11 @@
                     <a href="collection.php">Collection</a>
                 </li>
             </ul>
-            <a href="connexion.php"><button id="btn1">Inscription / Connexion →</button></a>
+            <a href="connexion.php"><button id="btn1"><?php if (isset($_SESSION['email'])) {
+                            echo 'profil';
+                        } else {
+                            echo 'Inscription / Connexion →';
+                        }?></button></a>
 
         </nav>
     </header>
