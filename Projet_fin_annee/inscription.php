@@ -4,7 +4,7 @@ require_once("haut_site.php");
 <?php
 
 require_once("init.php");
-
+// parie pour s'inscrire et verification du password et sa verif
 if($_POST){
     $pseudo = $_POST["pseudo"];
     $email = $_POST["email"];

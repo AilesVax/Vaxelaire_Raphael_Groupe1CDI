@@ -1,11 +1,11 @@
 <?php
 require_once("init.php");
 
-
+//pour ne pas acceder a la page inscirption si connecter
 if(isset($_SESSION["iduser"])) {
     header("location:profil.php");
 }
-
+//permet de remplir la session et de se connecter a l'aide de l'eamil et du password
 if ($_POST) {
 
     $email = trim($_POST["email"]);

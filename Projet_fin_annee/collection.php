@@ -64,8 +64,11 @@
                     <a href="collection.php">Collection</a>
                 </li>
             </ul>
-            <a href="connexion.php"><button id="btn1">Inscription / Connexion →</button></a>
-
+            <a href="connexion.php"><button id="btn1"><?php if (isset($_SESSION['email'])) {
+                            echo 'profil';
+                        } else {
+                            echo 'Inscription / Connexion →';
+                        }?></button></a>
         </nav>
     </header>
     <main>

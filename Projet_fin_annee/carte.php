@@ -55,7 +55,11 @@
                         <a href="carte.php">Les Cartes</a>
                     </li>
                     <li class=" margleftli">
-                        <a href="collection.php">Collection</a>
+                    <a href="connexion.php"><button id="btn1"><?php if (isset($_SESSION['email'])) {
+                            echo 'profil';
+                        } else {
+                            echo 'Inscription / Connexion →';
+                        }?></button></a>
                     </li>
                 </ul>
                 <a href="connexion.php"><button id="btn1">Inscription / Connexion →</button></a>

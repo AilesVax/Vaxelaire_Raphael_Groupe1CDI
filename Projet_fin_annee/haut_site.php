@@ -67,6 +67,7 @@ require_once("init.php");
                     <a href="collection.php">Collection</a>
                 </li>
             </ul>
+            <!-- Si connecter afficher profil -->
             <a href="connexion.php"><button id="btn1"><?php if (isset($_SESSION['email'])) {
                             echo 'profil';
                         } else {
