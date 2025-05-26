@@ -74,8 +74,8 @@
     <?php 
 require_once("bas_site.php");
 ?>
-    <script src="fichierJS/newPage.js"></script>
-    <script src="fichierJS/side.js"></script>
+    <script src="JS/newPage.js"></script>
+    <script src="JS/side.js"></script>
 </body>
 
 </html>

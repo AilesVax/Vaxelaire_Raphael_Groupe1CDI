@@ -1,6 +1,37 @@
 <?php 
 require_once("haut_site.php");
+$srmrCard = $pdo->prepare("SELECT * FROM carde ORDER BY RAND() LIMIT 3");
+$srmrCard->execute();
+$result = $srmrCard->fetchAll(PDO::FETCH_ASSOC);
+
+$iduser = $_SESSION["iduser"];
+$email = $_SESSION["email"];
+$pseudo = $_SESSION["pseudo"];
+
+$name1= $result[0]['name'];
+$name2 = $result[1]['name'];
+$name3 = $result[2]['name'];
+
+ $sql = "INSERT INTO card (name, user_iduser) VALUES (:name, :id_user)";
+    $stmt = $pdo->prepare($sql);
+    $stmt->execute([
+        'name' => $name1,
+        'id_user' => $iduser
+    ]);
+        $stmt->execute([
+        'name' => $name2,
+        'id_user' => $iduser
+    ]);
+        $stmt->execute([
+        'name' => $name3,
+        'id_user' => $iduser
+    ]);
 ?>
+<style>
+        input[value] {
+        display: none;
+    }
+</style>
     <main>
         <!-- <button id="sbr"class=" bouton ">sombre</button> -->
         <section id="back" class="d-flex flex-colum  ">
@@ -22,7 +53,16 @@ require_once("haut_site.php");
 
             </article>
         </section>
+<!-- Partie deballement carte -->
+        <section>
+            <button id="ouvrir">Ouvrir</button>
+            <div id="loll" class="d-flex">
+                        <input class="indexx" value="<?php echo($name1)?>" />
+                        <input class="indexx" value="<?php echo($name2)?>" />
+                        <input class="indexx" value="<?php echo($name3)?>" />
 
+                    </div>
+        </section>
 <!-- les différentes région ou l'on peut cliquer dessus -->
         <section class="d-flex flex-colum align-item-center margtop  ">
             <h2 id="regions">Les différentes régions</h2>
@@ -102,7 +142,8 @@ require_once("bas_site.php");
  
    
     <!-- <script src="script.js"></script> -->
-    <script src="fichierJS/side.js"></script>
+    <script src="JS/side.js"></script>
+    <script src="JS/deballer.js"></script>
 </body>
 
 </html>

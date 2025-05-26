@@ -55,6 +55,9 @@
                         <a href="carte.php">Les Cartes</a>
                     </li>
                     <li class=" margleftli">
+                    <a href="collection.php">Collection</a>
+                </li>
+                    <li class=" margleftli">
                     <a href="connexion.php"><button id="btn1"><?php if (isset($_SESSION['email'])) {
                             echo 'profil';
                         } else {
@@ -62,7 +65,7 @@
                         }?></button></a>
                     </li>
                 </ul>
-                <a href="connexion.php"><button id="btn1">Inscription / Connexion →</button></a>
+                
                 
         </nav>
     </header>
@@ -224,8 +227,8 @@
     <?php 
 require_once("bas_site.php");
 ?>
-    <script src="fichierJS/script.js"></script>
-    <script src="fichierJS/side.js"></script>
+    <script src="JS/script.js"></script>
+    <script src="JS/side.js"></script>
     
     
 </body>

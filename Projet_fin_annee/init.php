@@ -1,7 +1,7 @@
 <?php
 
 $host = 'localhost';
-$dbname = 'projet';
+$dbname = 'Project_fin';
 $username = 'root';
 $port = 3306;
 $password = '';

@@ -2,6 +2,9 @@
 require_once("haut_site.php");
 require_once("init.php");
 
+$iduser = $_SESSION["iduser"];
+$email = $_SESSION["email"];
+$pseudo = $_SESSION["pseudo"];
 // Partie modification pseudo
 if(isset($_POST['submit_pseudo'])) {
 
@@ -47,41 +50,19 @@ if(isset($_GET['action']) && $_GET['action'] == 'delete') {
     }
 
 }
+// affichage des cartes
+$stmt = $pdo->prepare("SELECT * FROM card WHERE user_iduser = :id_user");
 
-
-// partie carte
-//Creer un tableau pour enregister les cartes 
-if (!isset($_SESSION['cartes'])) {
-    $_SESSION['cartes'] = []; 
-}
-
-
-if($_GET && isset($_GET["carte"]) && trim($_GET["carte"]) !== "") {
-    $card = trim($_GET["carte"]);
-    //commande pour prendre les nom de la tabels card
-    $srmrCard = $pdo->prepare("SELECT * FROM card WHERE name = :name ");
-    $srmrCard->execute([
-        'name'=> $card
-    ]);
-    
-    $result = $srmrCard->fetchAll(PDO::FETCH_ASSOC); 
-   
-    //ajoute au tableau le ce qu'on lui envoie pour recupere le nom
-    if ($result) {
-       
-        $_SESSION['cartes'][] = $result[0];
-    } else {
-        echo "La carte n'existe pas dans la base de données.";
-    }
-    
-}
+        $stmt->execute([
+            "id_user" => $iduser,
+        ]);
+$cards = $stmt->fetchAll(PDO::FETCH_ASSOC);
 // Partie deconnexion
 
 if(isset($_GET["action"]) && $_GET["action"] == "deconnexion") {
     // je vide ma session
     unset($_SESSION["iduser"]);
     unset($_SESSION["email"]);
-    unset($_SESSION["cartes"]);
     header("location:inscription.php"); // redirection sans paramètre
 }
 
@@ -109,36 +90,23 @@ if(isset($_GET["action"]) && $_GET["action"] == "deconnexion") {
     <button type="submit" name="submit_pseudo">Modifier le pseudo</button>
     <?php   echo "<td> <a href='?supseudo=". $_SESSION["pseudo"] . "&action=delete'> Supprimer le compte </a> </td>";  
 ?>
-</form>
-<!-- jsute pour vous permettre de regarder ma base de données en direct facilement sera retirer apres  -->
-<?php
-        echo "<pre>";
-        print_r($_SESSION);
-        echo "</pre>";
-?>
-<!-- ajouter la carte -->
-<form action="" method="GET">
-    <input type="text" id="carte" name="carte" placeholder="Entrez le nom de la carte ">   
-    <input type="submit" value="Ajouter une carte">
+<a href="?action=deconnexion">Se déconnecter</a>
 </form>
     <!-- affcihe la carte et se deconnecter  -->
          <?php 
-            foreach ($_SESSION['cartes'] as $resultat) {
+            foreach ($cards as $resultat) {
                 echo "
                 <div id='lol8' class='d-flex'>
                     <input class='index8 P' value='" . htmlspecialchars($resultat['name']) . "' />
                 </div>";
             }
-            
-
-            
             ?>
-            <a href="?action=deconnexion">Se déconnecter</a>
+            
 </main>
 
 <?php 
 require_once("bas_site.php");
 ?>
-<script src="fichierJS/script.js"></script>
+<script src="JS/script.js"></script>
 </body>
 </html>

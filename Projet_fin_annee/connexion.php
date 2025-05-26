@@ -20,9 +20,12 @@ if ($_POST) {
 
         
         if ($user && password_verify($password, $user["password"])) {
-            $_SESSION["iduser"] = $user["iduser"];
-            $_SESSION["email"] = $user["email"];
-            $_SESSION["pseudo"] = $user["pseudo"];
+            $_SESSION["user"] = [
+                "iduser" => $user["iduser"],
+                "email" => $user["email"],
+                "pseudo" => $user["pseudo"],
+                "idcard" => $user["idcard"]
+            ];
             header("location:profil.php");
         } else {
             echo "La connexion a échoué !";
@@ -57,7 +60,7 @@ require_once("haut_site.php");
         </section>
     </main>
     
-    <script src="fichierJS/side.js"></script>
-    <script src="fichierJS/connexion.js"></script>
+    <script src="JS/side.js"></script>
+    <script src="JS/connexion.js"></script>
 </body>
 </html>

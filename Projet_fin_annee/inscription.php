@@ -78,7 +78,7 @@ if($_POST){
             <a class="margbot" href="connexion.php">Connexion</a>
         </section>
     </main>
-<script src="fichierJS/formulaire.js"></script>
-<script src="fichierJS/side.js"></script>
+<script src="JS/formulaire.js"></script>
+<script src="JS/side.js"></script>
 </body>
 </html>

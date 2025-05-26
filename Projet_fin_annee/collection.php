@@ -421,11 +421,11 @@
     <?php 
 require_once("bas_site.php");
 ?>
-    <script src="fichierJS/script.js"></script>
-    <script src="fichierJS/main.js"></script>
-    <script src="fichierJS/side.js"></script>
-    <script src="fichierJS/collection.js"></script>
-    <script src="fichierJS/newPage.js"></script>
+    <script src="JS/script.js"></script>
+    <script src="JS/main.js"></script>
+    <script src="JS/side.js"></script>
+    <script src="JS/collection.js"></script>
+    <script src="JS/newPage.js"></script>
 </body>
 
 </html>
