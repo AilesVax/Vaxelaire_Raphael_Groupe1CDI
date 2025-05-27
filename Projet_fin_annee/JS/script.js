@@ -285,6 +285,7 @@ async function ChamionsName7() {
         <img src="${image}" alt="${championlol}" class="cartecarte" />
         <a href="Page.php?champion=${championlol}" class="page white">Description</a>
       </div>
+      
       `;
 
 

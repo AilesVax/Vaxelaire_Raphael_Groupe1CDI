@@ -14,3 +14,8 @@ try {
 }
 
 session_start();
+if (isset($_SESSION["user"])) {
+    $iduser = $_SESSION["user"]["iduser"];
+    $email = $_SESSION["user"]["email"];
+    $pseudo = $_SESSION["user"]["pseudo"];
+}

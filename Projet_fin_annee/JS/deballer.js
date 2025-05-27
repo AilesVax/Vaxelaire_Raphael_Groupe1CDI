@@ -31,11 +31,12 @@ async function ChamionsNamee() {
             const image = `https://ddragon.leagueoflegends.com/cdn/img/champion/loading/${championlol}_0.jpg`;
 
 
-            container.innerHTML += `<div class=" bordercarte">
-          <p class="d-flex justify-content-center">${data.data[championlol].id}</p>
-          <img src="${image}" alt="${championlol}" class="cartecarte_collection" class="cartecarte" />
-          <p class="d-flex justify-content-center"> Attaque: ${data.data[championlol].info.attack} <br> Défense: ${data.data[championlol].info.defense} <br> Magique: ${data.data[championlol].info.magic}</p> 
-          </div>
+             container.innerHTML += `
+      <div class=" bordercartecarte anim">
+        <p class="d-flex justify-content-center">${data.data[championlol].id}</p>
+        <img src="${image}" alt="${championlol}" class="cartecarte" />
+        <a href="Page.php?champion=${championlol}" class="page white">Description</a>
+      </div>
           `;
 
 
@@ -46,20 +47,19 @@ async function ChamionsNamee() {
 
 }
 
-let time = new Date();
-let heure = time.getHours();
-
-localStorage.setItem('heure', heure); //cle , valeur
-let now = localStorage.getItem('heure');
 
 butOuvrir.addEventListener("click", function () {
-    ChamionsNamee();
-    console.log("Heure sauvegardée :", now);
-    // console.log("Heure sauvegardée :", moreTime);
-    
-    setTimeout(() => {
-        localStorage.setItem('heure', now);
+    let maintenant = new Date().getHours();
+    let derHeure = localStorage.getItem('dereHeure');
+    let container = document.getElementById("non");
+    let compte = maintenant - derHeure + 24;
+    if (maintenant - derHeure < 24) {
+        container.innerHTML = `<h3>Pas le temps batard attend: ${compte} heures </h3`
+        return;
+    }
 
-    }, 50000);
+    ChamionsNamee();
+    localStorage.setItem('dereHeure', maintenant);
+
 
 })

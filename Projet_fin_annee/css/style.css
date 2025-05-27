@@ -31,6 +31,9 @@
 align-items: flex-end;
 
 }
+.wrap{
+    flex-wrap: wrap;
+}
 
 
 
@@ -316,7 +319,7 @@ width: 100%;
         margin-left: 22%;
     }
 }
-/* pour le java */
+/* pour le java et les cartes java */
 .black{
     background-color:black
 }
@@ -330,6 +333,18 @@ width: 100%;
 
 .margr2{
     margin-right: 5%;
+}
+.anim {
+  animation: rotateInfini 2s linear ;
+}
+
+@keyframes rotateInfini {
+  from {
+    transform: rotateY(0deg);
+  }
+  to {
+    transform: rotateY(360deg);
+  }
 }
 /* parti formulaire */
     

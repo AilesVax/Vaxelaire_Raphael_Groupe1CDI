@@ -4,27 +4,27 @@ $srmrCard = $pdo->prepare("SELECT * FROM carde ORDER BY RAND() LIMIT 3");
 $srmrCard->execute();
 $result = $srmrCard->fetchAll(PDO::FETCH_ASSOC);
 
-$iduser = $_SESSION["iduser"];
-$email = $_SESSION["email"];
-$pseudo = $_SESSION["pseudo"];
 
 $name1= $result[0]['name'];
 $name2 = $result[1]['name'];
 $name3 = $result[2]['name'];
 
- $sql = "INSERT INTO card (name, user_iduser) VALUES (:name, :id_user)";
+ $sql = "INSERT INTO card (name, user_iduser,fav) VALUES (:name, :id_user,:fav)";
     $stmt = $pdo->prepare($sql);
     $stmt->execute([
         'name' => $name1,
-        'id_user' => $iduser
+        'id_user' => $iduser,
+        'fav' => 0,
     ]);
         $stmt->execute([
         'name' => $name2,
-        'id_user' => $iduser
+        'id_user' => $iduser,
+        'fav' => 0,
     ]);
         $stmt->execute([
         'name' => $name3,
-        'id_user' => $iduser
+        'id_user' => $iduser,
+        'fav' => 0,
     ]);
 ?>
 <style>
@@ -57,6 +57,7 @@ $name3 = $result[2]['name'];
         <section>
             <button id="ouvrir">Ouvrir</button>
             <div id="loll" class="d-flex">
+                <h3 id="non"></h3>
                         <input class="indexx" value="<?php echo($name1)?>" />
                         <input class="indexx" value="<?php echo($name2)?>" />
                         <input class="indexx" value="<?php echo($name3)?>" />

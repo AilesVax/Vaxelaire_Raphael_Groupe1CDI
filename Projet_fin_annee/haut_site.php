@@ -68,7 +68,7 @@ require_once("init.php");
                 </li>
             </ul>
             <!-- Si connecter afficher profil -->
-            <a href="connexion.php"><button id="btn1"><?php if (isset($_SESSION['email'])) {
+            <a href="connexion.php"><button id="btn1"><?php if (isset($email)) {
                             echo 'profil';
                         } else {
                             echo 'Inscription / Connexion →';

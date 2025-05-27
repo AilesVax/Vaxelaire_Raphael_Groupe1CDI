@@ -65,3 +65,10 @@
     margin-left: 25%;
   }
 }
+
+.carte-classe-disp{
+    display: none;
+}
+.carte-classe {
+    display: block;
+}
