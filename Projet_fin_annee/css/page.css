@@ -1,5 +1,18 @@
 /* Que par arapport a la page dynamoique qui affiche la description  */
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Avenir Arabic Light', sans-serif;
+}
 
+
+
+@font-face {
+    font-family: 'Avenir Arabic Light';
+    src: url('font/AvenirArabic-Light.woff2') format('woff2');
+    font-weight: 300;
+    font-style: normal;
+}
 
 .bordercartecarte2{
     background-color: #392055;
@@ -72,3 +85,4 @@
 .carte-classe {
     display: block;
 }
+

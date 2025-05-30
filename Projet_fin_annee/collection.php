@@ -1,3 +1,4 @@
+<?php require_once("init.php"); ?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -64,7 +65,8 @@
                     <a href="collection.php">Collection</a>
                 </li>
             </ul>
-            <a href="connexion.php"><button id="btn1"><?php if (isset($_SESSION['email'])) {
+            <!-- Si connecter afficher profil -->
+            <a href="connexion.php"><button id="btn1"><?php if (isset($email)) {
                             echo 'profil';
                         } else {
                             echo 'Inscription / Connexion →';
@@ -91,16 +93,16 @@
                     Freljord
                 </li>
                 <li class="tab tab-nomDuContenu5 borderr size dis">
-                    Ionia
+                    Iles Obscures
                 </li>
                 <li class="tab tab-nomDuContenu6 borderr size dis">
-                    Noxus
+                    Ionia
                 </li>
                 <li class="tab tab-nomDuContenu7 borderr size dis">
-                    Piltover
+                    Noxus
                 </li>
                 <li class="tab tab-nomDuContenu8 borderr size dis">
-                    Iles Obscures
+                    Piltover
                 </li>
                 <li class="tab tab-nomDuContenu9 borderr size dis">
                     Shurima
@@ -311,7 +313,7 @@
                         <input class="indexx5" value="Ahri" />
                         <input class="indexx5" value="Yasuo" />
                         <input class="indexx5" value="Yone" />
-                        <input class="indexx5" value="Sejuani" />
+                        <input class="indexx5" value="irelia" />
                     </div>
                     <div class="reposnsive">
                     <div class="image-container">
@@ -425,7 +427,7 @@ require_once("bas_site.php");
     <script src="JS/main.js"></script>
     <script src="JS/side.js"></script>
     <script src="JS/collection.js"></script>
-    <script src="JS/newPage.js"></script>
+    
 </body>
 
 </html>

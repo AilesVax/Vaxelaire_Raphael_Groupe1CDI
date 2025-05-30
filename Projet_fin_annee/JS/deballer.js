@@ -49,17 +49,5 @@ async function ChamionsNamee() {
 
 
 butOuvrir.addEventListener("click", function () {
-    let maintenant = new Date().getHours();
-    let derHeure = localStorage.getItem('dereHeure');
-    let container = document.getElementById("non");
-    let compte = maintenant - derHeure + 24;
-    if (maintenant - derHeure < 24) {
-        container.innerHTML = `<h3>Pas le temps batard attend: ${compte} heures </h3`
-        return;
-    }
-
-    ChamionsNamee();
-    localStorage.setItem('dereHeure', maintenant);
-
-
+  ChamionsNamee();
 })

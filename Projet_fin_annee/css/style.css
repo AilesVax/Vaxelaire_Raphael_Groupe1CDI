@@ -1,4 +1,17 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Avenir Arabic Light', sans-serif;
+}
 
+
+
+@font-face {
+    font-family: 'Avenir Arabic Light';
+    src: url('font/AvenirArabic-Light.woff2') format('woff2');
+    font-weight: 300;
+    font-style: normal;
+}
 .d-flex {
     display: flex;
 
@@ -61,6 +74,9 @@ align-items: flex-end;
     width: 50%;
 }
 
+.with{
+    width: 15%
+}
 
 .border{
     border: 2px solid black;
@@ -337,6 +353,19 @@ width: 100%;
 .anim {
   animation: rotateInfini 2s linear ;
 }
+#ouvrir{
+    margin-top: 8%;
+    border-radius: 1em;
+    width: 500px;
+    height: 80px;
+    text-align: center;
+    color: white;
+    background: linear-gradient(to right, red, purple);
+    font-size: 25px;
+}
+#ouvrir:hover{
+background: linear-gradient(to left, red, purple);
+}
 
 @keyframes rotateInfini {
   from {
@@ -536,9 +565,11 @@ display: none;
 nav a {
     text-decoration: none;
     color: rgb(77, 77, 77);
-
+   transition: 0.3s;
 }
-
+nav a:hover{
+    font-size: x-large;
+}
 nav ul {
     list-style: none;
     width: 100%;
