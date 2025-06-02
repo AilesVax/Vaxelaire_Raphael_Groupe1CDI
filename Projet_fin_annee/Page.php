@@ -14,7 +14,7 @@
     <header class="d-flex">
 <!-- navbarre -->
         <img src="css/image/Untitled.png" alt="" class="w-menu disp " id="menu">
-        <nav class="slide left">
+       <nav class="slide left">
             <ul class="d-flex flex-colum">
 
                 <li class=" margleftli">
@@ -32,17 +32,24 @@
                     <hr class="hrr">
                 </li>
                 <li class=" margleftli">
-                    <a href="inscription.php">Inscription</a>
+                     <a href="inscription.php"><?php if (isset($email)) {
+                            echo 'profil';
+                        } else {
+                            echo 'Inscription ';
+                        }?></a>
                     <hr class="hrr">
                 </li>
                 <li class=" margleftli">
-                    <a href="connexion.php">Connexion</a>
+                   <a href="connexion.php"><?php if (isset($email)) {
+                            echo '';
+                        } else {
+                            echo 'Connexion ';
+                        }?></a>
                 </li>
 
             </ul>
 
         </nav>
-
 <!--partie sidenav repsonsive -->
         <img id="logo" src="css/image/logo_card.png" alt="logo LolCard ">
         <H1 class="headmargtop">LolCard</H1>

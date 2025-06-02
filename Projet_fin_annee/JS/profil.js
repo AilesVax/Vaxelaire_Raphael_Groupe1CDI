@@ -31,7 +31,7 @@
             <img src="${image}" alt="${championlol}" class="cartecarte" />  
             <form method="get">
                 <input type="hidden" name="favorie" value="${id}" />
-                <button type="submit">Ajouter au Favoris</button>
+                <button class="fav-btn add" type="submit">Ajouter au Favoris</button>
             </form>
             <a href="Page.php?champion=${championlol}" class="page white">Description</a>
             
@@ -73,7 +73,7 @@
             <img src="${image}" alt="${championlol}" class="cartecarte" />  
             <form method="get">
                 <input type="hidden" name="favorie" value="${id}" />
-                <button type="submit">Ajouter au Favoris</button>
+                <button class="fav-btn add" type="submit">Ajouter au Favoris</button>
             </form>
             <a href="Page.php?champion=${championlol}" class="page white">Description</a>
             
@@ -117,7 +117,7 @@
             <img src="${image}" alt="${championlol}" class="cartecarte" />  
             <form method="get">
                 <input type="hidden" name="favorie" value="${id}" />
-                <button type="submit">Ajouter au Favoris</button>
+                <button class="fav-btn add" type="submit">Ajouter au Favoris</button>
             </form>
             <a href="Page.php?champion=${championlol}" class="page white">Description</a>
             
@@ -158,7 +158,7 @@ async function ChamionsName2() {
             <img src="${image}" alt="${championlol}" class="cartecarte" />  
             <form method="get">
                 <input type="hidden" name="favorie" value="${id}" />
-                <button type="submit">Ajouter au Favoris</button>
+                <button class="fav-btn add" type="submit">Ajouter au Favoris</button>
             </form>
             <a href="Page.php?champion=${championlol}" class="page white">Description</a>
             
@@ -201,7 +201,7 @@ async function ChamionsName3() {
             <img src="${image}" alt="${championlol}" class="cartecarte" />  
             <form method="get">
                 <input type="hidden" name="favorie" value="${id}" />
-                <button type="submit">Ajouter au Favoris</button>
+                <button class="fav-btn add" type="submit">Ajouter au Favoris</button>
             </form>
             <a href="Page.php?champion=${championlol}" class="page white">Description</a>
             
@@ -244,7 +244,7 @@ async function ChamionsName4() {
             <img src="${image}" alt="${championlol}" class="cartecarte" />  
             <form method="get">
                 <input type="hidden" name="favorie" value="${id}" />
-                <button type="submit">Ajouter au Favoris</button>
+                <button class="fav-btn add" type="submit">Ajouter au Favoris</button>
             </form>
             <a href="Page.php?champion=${championlol}" class="page white">Description</a>
             
@@ -287,7 +287,7 @@ async function ChamionsName4() {
             <img src="${image}" alt="${championlol}" class="cartecarte" />  
             <form method="get">
                 <input type="hidden" name="favorie" value="${id}" />
-                <button type="submit">Ajouter au Favoris</button>
+                <button class="fav-btn add" type="submit">Ajouter au Favoris</button>
             </form>
             <a href="Page.php?champion=${championlol}" class="page white">Description</a>
             
@@ -330,7 +330,7 @@ async function ChamionsName4() {
             <img src="${image}" alt="${championlol}" class="cartecarte" />  
             <form method="get">
                 <input type="hidden" name="favorie" value="${id}" />
-                <button type="submit">Ajouter au Favoris</button>
+                <button class="fav-btn add" type="submit">Ajouter au Favoris</button>
             </form>
             <a href="Page.php?champion=${championlol}" class="page white">Description</a>
             
@@ -373,7 +373,7 @@ async function ChamionsName4() {
             <img src="${image}" alt="${championlol}" class="cartecarte" />  
             <form method="get">
                 <input type="hidden" name="favorie" value="${id}" />
-                <button type="submit">Ajouter au Favoris</button>
+                <button class="fav-btn add" type="submit">Ajouter au Favoris</button>
             </form>
             <a href="Page.php?champion=${championlol}" class="page white">Description</a>
             
@@ -415,7 +415,7 @@ async function ChamionsName4() {
             <img src="${image}" alt="${championlol}" class="cartecarte" />
             <form method="get">
                 <input type="hidden" name="favorie" value="${id}" />
-                <button type="submit">Ajouter au Favoris</button>
+                <button class="fav-btn add" type="submit">Ajouter au Favoris</button>
             </form>
             <a href="Page.php?champion=${championlol}" class="page white">Description</a>
             </div>
@@ -448,13 +448,13 @@ async function ChamionsName4() {
 
 
                 container.innerHTML += `
-        <div class=" bordercartecarte with">
+        <div class=" bordercartecarte withh">
         
             <p class="d-flex justify-content-center">${data.data[championlol].id}</p>
             <img src="${image}" alt="${championlol}" class="cartecarte" />  
             <form method="get">
                 <input type="hidden" name="favorie" value="${id}" />
-                <button type="submit">Retirer au Favoris</button>
+                <button class="fav-btn remove" type="submit">Retirer des Favoris</button>
             </form>
             <a href="Page.php?champion=${championlol}" class="page white">Description</a>
             
@@ -473,3 +473,6 @@ async function ChamionsName4() {
     window.addEventListener('DOMContentLoaded', () => {
         ChamionsNamefav();
     });
+
+
+    

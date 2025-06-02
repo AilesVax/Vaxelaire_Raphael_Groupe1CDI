@@ -1,0 +1,343 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Inter", serif;
+}
+
+
+
+
+.flex {
+    display: flex;
+}
+
+.between {
+    justify-content: space-between;
+}
+
+.space-around {
+    justify-content: space-around;
+}
+
+.justify-content-center {
+    justify-content: center;
+}
+
+.align-item-center {
+    align-items: center;
+}
+
+.colon {
+    flex-direction: column;
+}
+
+
+
+/* debut header */
+nav a {
+    text-decoration: none;
+    color: rgb(77, 77, 77);
+
+}
+
+nav ul {
+    list-style: none;
+    width: 100%;
+
+}
+
+nav {
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    white-space: nowrap;
+
+}
+
+
+.esp_nav {
+    margin-left: 45%;
+    margin-right: 1%;
+}
+
+header {
+    box-shadow: 1px 5px 5px rgb(119, 117, 117);
+}
+
+#logo {
+    width: 10%;
+}
+
+.navmargtop {
+    margin-top: 9%;
+}
+
+.headmargtop {
+    margin-top: 1%;
+}
+
+.margleftli {
+    margin-left: 8%;
+}
+
+#btn1 {
+    border-radius: 1em;
+    background-color: rgb(169, 46, 218);
+    margin-left: 5%;
+    width: 250px;
+    height: 50px;
+    text-align: center;
+    color: white;
+
+
+}
+
+/* fin header */
+
+/* Debut slide */
+.swiper {
+    width: 100%;
+    height: 900px;
+}
+
+.swiper-slide {
+
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+}
+
+#firstecr {
+    margin-top: 5%;
+    font-weight: 550;
+    margin-left: 7%;
+    font-size: 50px;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.mySwiper {
+    width: 100%;
+    height: 900px;
+}
+
+.titre {
+    color: rgb(169, 46, 218);
+    font-weight: 750;
+}
+
+#slide1 {
+    background: linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3)), url(img/fond1.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+}
+
+#slide2 {
+    background: linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3)), url(img/background_carnet.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+}
+
+#secondecr {
+    margin-top: 3%;
+    font-weight: 550;
+    margin-left: 2%;
+    font-size: 50px;
+}
+
+#btn2 {
+    border-radius: 1em;
+    background-color: rgb(183, 0, 255);
+    width: 250px;
+    height: 100px;
+    text-align: center;
+    color: white;
+    margin-left: 7%;
+    margin-top: 2%;
+    font-size: 35px;
+}
+
+#btn3 {
+    border-radius: 1em;
+    background-color: rgb(183, 0, 255);
+    width: 250px;
+    height: 100px;
+    text-align: center;
+    color: white;
+    margin-left: 2%;
+    margin-top: 2%;
+    font-size: 35px;
+}
+
+/* Fin slide */
+
+/* Partie moins 10% */
+#reduc {
+    font-size: 35px;
+    font-weight: 800;
+    color: rgb(179, 45, 137);
+    margin-top: 3%;
+}
+
+#pourc {
+    width: 10%;
+}
+
+.pf {
+    margin-top: 2%;
+    font-size: 50px;
+}
+
+/* fin partie 10% */
+/* Partie points fort */
+.vert {
+    width: 20%;
+}
+
+.margtop {
+    margin-top: 8%;
+}
+
+.ecrtop {
+    margin-top: 4%;
+    font-size: 25px;
+}
+
+.white {
+    color: #ffffff;
+}
+
+/* fin partie poirtn fort */
+
+/* partie slide carte plus rareter */
+.mySwiper1 {
+    width: 20%;
+    height: 600px;
+    margin-top: 12%;
+    margin-right: 10%;
+}
+
+.margleft {
+    margin-right: 30%;
+    margin-top: 10%;
+}
+
+#type {
+    margin-top: 15%;
+    font-size: 50px;
+    font-weight: 400;
+    margin-left: 50%;
+    white-space: nowrap;
+}
+
+.margin {
+    margin-left: 60%;
+    white-space: nowrap;
+}
+
+.top {
+    margin-top: 15%;
+}
+
+#chiffre {
+    font-size: 80px;
+}
+
+.tit {
+    margin-left: 15%;
+    font-size: 35px;
+    font-weight: 500;
+}
+
+.tite {
+    margin-left: 31%;
+    font-size: 35px;
+    font-weight: 500;
+
+}
+
+.chance {
+    margin-left: 5%;
+    font-weight: 400;
+}
+
+#btn4 {
+    margin-top: 5%;
+    width: 15%;
+    height: 75px;
+    border-radius: 1em;
+    background-color: #fff;
+    font-size: 25px;
+}
+
+/* fin partie carte plus rareter */
+
+/* partie collaboration */
+#aide {
+    font-size: 50px;
+    color: rgb(77, 77, 77);
+    margin-left: 25%;
+    margin-bottom: 10%;
+}
+
+#illu {
+    font-size: 50px;
+    color: rgb(77, 77, 77);
+    margin-left: 100%;
+}
+
+#profile {
+    margin-top: 15%;
+    width: 80%;
+    margin-left: 100%;
+}
+
+#riot {
+    width: 35%;
+    margin-left: 5%;
+}
+
+#carta {
+    width: 50%;
+    margin-left: 5%;
+    margin-bottom: 5%;
+}
+
+#mec {
+    margin-left: 110%;
+    font-size: 25px;
+    white-space: nowrap;
+}
+
+/* Fin partie collaboration */
+/* Partie commentaire */
+.avis {
+    width: 25%;
+    border: black solid 2px;
+
+}
+
+#av {
+    font-size: 50px;
+    color: rgb(77, 77, 77);
+    padding: 5%;
+}
+
+/* Fin partie commentaire */
+/* Footer */
+.edit {
+    padding: 1%;
+}
+
+footer {
+    margin-top: 5%;
+    background-color: rgb(217, 217, 217);
+}

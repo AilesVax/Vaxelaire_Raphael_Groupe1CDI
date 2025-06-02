@@ -17,7 +17,7 @@ form.addEventListener('submit', function (event) {
     let pseudo = document.querySelector('#pseudo')
     let errpseudo = document.createElement('li')
     // pseudo au dessus de 6 caractere
-    if (pseudo.value.length < 6) {
+    if (pseudo.value.length < 3) {
         error.classList.add('visible')
         
         errpseudo.innerText = 'pseudo incorrect'

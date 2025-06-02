@@ -159,7 +159,10 @@
 
 
             <hr>
+            <div class="flex justify-content-center">
+            <a class="ouvrir" href="landing page/landing.html" target="blank">landing Page</a></div>
         </section>
+        
     </main>
     <?php 
 require_once("bas_site.php");

@@ -47,7 +47,11 @@ async function ChamionsNamee() {
 
 }
 
+let clicked = false;
 
 butOuvrir.addEventListener("click", function () {
-  ChamionsNamee();
-})
+  if (!clicked) {
+    clicked = true;
+    ChamionsNamee();
+  }
+});

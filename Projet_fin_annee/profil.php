@@ -52,7 +52,7 @@ if (isset($_GET['favorie'])) {
 }
 
 
-
+// requetes pour les differentes cartes en fonction des region pour afficher
 $stm = $pdo->prepare("SELECT * FROM card WHERE fav = 1 AND user_iduser = :id_user ");
 $stm->execute(["id_user" => $iduser,]);
 
@@ -127,30 +127,31 @@ if (isset($_GET["action"]) && $_GET["action"] == "deconnexion") {
     .index8[value] {
         display: none;
     }
+
+
 </style>
 
 
 <main>
     <!-- affcihe du pseudo  -->
     <div class="user-info">
+        <div class="flex justify-content-between size">
         <?php
-
         echo " Adresse Email : " . $email;
-        echo "<br> $pseudo"; ?>
-
+        ?>
+        <a href="?action=deconnexion"><span class="size">Se déconnecter</span></a>
+        </div>
         <!-- changer de pseudo -->
-        <form method="post">
-            .
-            <input type="text" id="new_pseudo" name="new_pseudo" value="<?php htmlspecialchars($pseudo); ?>">
-
-            <button type="submit" name="submit_pseudo">Modifier le pseudo</button>
-
-            <a href="?action=deconnexion">Se déconnecter</a>
-
+        <form method="post"class="flex flex-colum align-item-center size">
+            <?php  echo "$pseudo";?>
+            <div>
+            <input type="text" placeholder="Nouveau Pseudo" id="new_pseudo" name="new_pseudo" value="<?php htmlspecialchars($pseudo); ?>">
+            <button type="submit" name="submit_pseudo">Modifier le pseudo</button></div>
         </form>
+        
     </div>
-    <h2>Favorie</h2>
-    <div id="lolfav" class="flex wrap">
+    <h2 class="flex justify-content-center ">Favoris</h2>
+    <div id="lolfav" class="flex wrap fondr margleft">
         <?php
         foreach ($favCard as $resultat) {
             echo "
@@ -162,7 +163,7 @@ if (isset($_GET["action"]) && $_GET["action"] == "deconnexion") {
         }
         ?>
     </div>
-    <h2>Mes cartes</h2>
+    <h2 class="flex justify-content-center margbot">Mes cartes</h2>
     <!-- les tabs en haurt sur quoi cliquer -->
     <section>
         <ul class="d-flex fond justify-content-between change">
@@ -201,9 +202,9 @@ if (isset($_GET["action"]) && $_GET["action"] == "deconnexion") {
 
         </ul>
         <!-- selection de toutes les cartes  -->
-        <div class="d-flex justify-content-center margt  size">
+
             <div class=" content nomDuContenu active flex margleft tous resss">
-                <div id="lo" class="flex wrap">
+                <div id="lo" class="flex wrap fondr">
                     <?php
                     foreach ($cards as $resultat) {
                         echo "
@@ -217,7 +218,7 @@ if (isset($_GET["action"]) && $_GET["action"] == "deconnexion") {
             </div>
             <!-- partie bandle-city -->
             <article class="content art nomDuContenu1 flex margleftt ">
-                <div id="lol" class="d-flex wrap">
+                <div id="lol" class="d-flex wrap fondr">
                     <?php
                     foreach ($bandleCard as $resultat) {
                         echo "
@@ -232,7 +233,7 @@ if (isset($_GET["action"]) && $_GET["action"] == "deconnexion") {
             </article>
             <!-- partie bilgwater -->
             <article class="content art nomDuContenu2 flex margleftt">
-                <div id="lol1" class="d-flex wrap">
+                <div id="lol1" class="d-flex wrap fondr">
                     <?php
                     foreach ($bilgwaterCard as $resultat) {
                         echo "
@@ -246,7 +247,7 @@ if (isset($_GET["action"]) && $_GET["action"] == "deconnexion") {
             </article>
             <!-- partie demacia -->
             <article class="content art nomDuContenu3 flex margleftt">
-                <div id="lol2" class="d-flex wrap">
+                <div id="lol2" class="d-flex wrap fondr">
                     <?php
                     foreach ($demaciaCard as $resultat) {
                         echo "
@@ -260,7 +261,7 @@ if (isset($_GET["action"]) && $_GET["action"] == "deconnexion") {
             </article>
             <!-- partie freljord -->
             <article class="content art nomDuContenu4 flex margleftt">
-                <div id="lol3" class="d-flex wrap">
+                <div id="lol3" class="d-flex wrap fondr">
                     <?php
                     foreach ($freljordCard as $resultat) {
                         echo "
@@ -271,11 +272,11 @@ if (isset($_GET["action"]) && $_GET["action"] == "deconnexion") {
                     }
                     ?>
                 </div>
-        </div>
+
         </article>
         <!-- partie ile -->
         <article class="content art nomDuContenu5 flex margleftt">
-            <div id="lol4" class="d-flex wrap">
+            <div id="lol4" class="d-flex wrap fondr">
                 <?php
                 foreach ($ioniaCard as $resultat) {
                     echo "
@@ -289,7 +290,7 @@ if (isset($_GET["action"]) && $_GET["action"] == "deconnexion") {
         </article>
         <!-- partie ionia -->
         <article class="content art nomDuContenu6 flex margleftt">
-            <div id="lol5" class="d-flex wrap">
+            <div id="lol5" class="d-flex wrap fondr">
                 <?php
                 foreach ($noxusCard as $resultat) {
                     echo "
@@ -303,7 +304,7 @@ if (isset($_GET["action"]) && $_GET["action"] == "deconnexion") {
         </article>
         <!-- partie noxus -->
         <article class="content art nomDuContenu7 flex margleftt">
-            <div id="lol6" class="d-flex wrap">
+            <div id="lol6" class="d-flex wrap fondr">
                 <?php
                 foreach ($piltoverCard as $resultat) {
                     echo "
@@ -317,7 +318,7 @@ if (isset($_GET["action"]) && $_GET["action"] == "deconnexion") {
         </article>
         <!-- partie piltover -->
         <article class="content art nomDuContenu8 flex margleftt">
-            <div id="lol7" class="d-flex wrap">
+            <div id="lol7" class="d-flex wrap fondr">
                 <?php
                 foreach ($ilesCard as $resultat) {
                     echo "
@@ -331,7 +332,7 @@ if (isset($_GET["action"]) && $_GET["action"] == "deconnexion") {
         </article>
         <!-- partie shurima -->
         <article class="content art nomDuContenu9 flex margleftt">
-            <div id="lol8" class="d-flex wrap">
+            <div id="lol8" class="d-flex wrap fondr">
                 <?php
                 foreach ($shurimaCard as $resultat) {
                     echo "
@@ -361,7 +362,7 @@ require_once("bas_site.php");
 <script src="JS/profil.js"></script>
 
 <script src="JS/main.js"></script>
-
+<script src="JS/side.js"></script>
 
 </body>
 

@@ -75,9 +75,11 @@ align-items: flex-end;
 }
 
 .with{
-    width: 15%
+    width: 18%
 }
-
+.withh{
+    width: 17%;
+}
 .border{
     border: 2px solid black;
     border-radius: 50%;
@@ -366,7 +368,23 @@ width: 100%;
 #ouvrir:hover{
 background: linear-gradient(to left, red, purple);
 }
-
+.ouvrir{
+    margin-top: 8%;
+    margin-bottom: 8%;
+    border-radius: 1em;
+    width: 500px;
+    height: 80px;
+    color: white;
+    background: linear-gradient(to right, rgb(151, 32, 115), purple);
+    font-size: 25px;
+    text-decoration: none;
+    display: flex;              
+    align-items: center;        
+    justify-content: center;
+}
+.ouvrir:hover{
+background: linear-gradient(to left, red, purple);
+}
 @keyframes rotateInfini {
   from {
     transform: rotateY(0deg);
@@ -638,7 +656,7 @@ header {
     position: fixed;
     bottom: 8%;
     right: 2%;
-    
+
 }
 
 .jolie {
@@ -648,6 +666,7 @@ header {
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
     text-align: center;
     display: none;
+    
 }
 
 .echange {
@@ -672,6 +691,19 @@ header {
 #exchange:hover{  
     background-color: rgb(168, 16, 228);
 }
+.exchange{
+    margin-top: 10%;
+    margin-right: 10px;
+    border-radius: 1em;
+    background-color: rgb(97, 29, 124);
+    text-align: center;
+    color: white;
+    width: 150px;
+    height: 50px;
+    
+}
+
+
 /* partie sidenav */
 .w-menu{
     
@@ -736,6 +768,10 @@ header {
     .hrr{
         margin-top: 3%;
     }
+
+    
+
+
 }
 .content:not(.active) {
     display: none ;

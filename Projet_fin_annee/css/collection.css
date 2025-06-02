@@ -5,7 +5,6 @@ body{
 }
 
 
-
 @font-face {
     font-family: 'Avenir Arabic Light';
     src: url('font/AvenirArabic-Light.woff2') format('woff2');
@@ -105,6 +104,21 @@ margin-left: 45%;
     }
 }
 
+
+.fondr {
+ padding: 5%;
+ margin-top: 2%;
+    margin-right: 5%;
+margin-bottom: 2%;
+    background-color: #f5f5f5;
+    border-radius: 10px;
+
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+.margbot{
+    margin-bottom: 2%;
+}
 /* responsive page collection.html */
 @media screen and (max-width:600px) {
 
@@ -123,8 +137,11 @@ margin-left: 45%;
         
     }
     .tous img{
-        width: 30%;
+        width: 100%;
         
+    }
+    .mage img{
+        margin-left: 0%;
     }
     .dis{
         display: none;
@@ -133,6 +150,10 @@ margin-left: 45%;
         display: block;
         width: 5%;
         margin-left: 47.5%;
+    }
+     .cartecarte{
+        width: 100%;
+        
     }
     .bordercarte{
         background-color: #392055;
@@ -147,8 +168,8 @@ margin-left: 45%;
         animation: slide 1s ;
         display: flex;
         flex-direction: column;
-        margin-top: 5%;
-        
+        margin-top: 0%;
+      
       }
 #loll,
 #loll1,
@@ -164,10 +185,7 @@ margin-left: 45%;
     
 }
 
-.mage img {
-    margin-left: 35%;
-    
-}
+
 .mage{
     margin-left: 22%;
 }
@@ -199,15 +217,17 @@ margin-left: 45%;
     padding: 20px;
     background-color: #f5f5f5;
     border-radius: 10px;
-    font-family: Arial, sans-serif;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
 .user-info p,
 .user-info form {
     margin: 10px 0;
-}
 
+}
+.size{
+    font-size: 25px;
+}
 .user-info input[type="text"] {
     padding: 8px 12px;
     font-size: 14px;
@@ -236,4 +256,59 @@ margin-left: 45%;
     font-size: 14px;
     color: #d10000;
     text-decoration: none;
+    border: 2px solid #d10000; 
+    padding: 15px 30px;         
+    border-radius: 5px;
+}
+
+@media (max-width: 600px) {
+
+    .user-info a {
+        margin-left: 0;
+        margin-top: 10px;
+        width: 100%;
+        text-align: center;
+    }
+
+    .user-info form {
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .user-info input[type="text"],
+    .user-info button {
+        width: 100%;
+        margin: 5px 0;
+    }
+}
+.fav-btn {
+  padding: 10px 20px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  color: white;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.fav-btn.add {
+  background: linear-gradient(135deg, #a855f7, #7e22ce);
+}
+
+.fav-btn.add:hover {
+  background: linear-gradient(135deg, #9333ea, #6b21a8);
+  box-shadow: 0 0 10px #c084fc;
+}
+
+.fav-btn.remove {
+  background: linear-gradient(135deg, #6b21a8, #4c1d95);
+}
+
+.fav-btn.remove:hover {
+  background: linear-gradient(135deg, #9333ea, #5b21b6);
+  box-shadow: 0 0 10px #a78bfa;
 }

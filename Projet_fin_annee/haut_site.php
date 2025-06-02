@@ -40,11 +40,19 @@ require_once("init.php");
                     <hr class="hrr">
                 </li>
                 <li class=" margleftli">
-                    <a href="inscription.php">Inscription</a>
+                     <a href="inscription.php"><?php if (isset($email)) {
+                            echo 'profil';
+                        } else {
+                            echo 'Inscription ';
+                        }?></a>
                     <hr class="hrr">
                 </li>
                 <li class=" margleftli">
-                    <a href="connexion.php">Connexion</a>
+                   <a href="connexion.php"><?php if (isset($email)) {
+                            echo '';
+                        } else {
+                            echo 'Connexion ';
+                        }?></a>
                 </li>
 
             </ul>
